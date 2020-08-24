@@ -1,5 +1,12 @@
 
-
+.nicole{
+    background-color: #272727;
+    
+}
+.nicole-text{
+    color: #fff;
+    margin: 10px;
+}
 .wrapper{
     position: absolute;
     top: 0;

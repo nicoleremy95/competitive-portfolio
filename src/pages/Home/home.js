@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/navbar/navbar'
 import CarouselImage from '../../components/carousel/carousel'
 import ContactForm from '../../components/contactForm/contactform'
+import Resume from '../../components/resume/resume'
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <>
             <Navbar/>
             <CarouselImage/>
+            <Resume/>
             <ContactForm/>
         </>
     )

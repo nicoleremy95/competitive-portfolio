@@ -1,0 +1,16 @@
+.form-container{
+    background-image: url("../../images/computer.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; 
+    height: 100vh;
+}
+.form-filter{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.255);
+}
+
+.contact-form{
+    max-width: 300px;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button,Row } from 'antd';
+import '../contactForm/contactform.css'
 
 
 export default function ContactForm() {
@@ -11,22 +12,20 @@ export default function ContactForm() {
         wrapperCol: { offset: 8, span: 16 },
       };
       
-    //   const Demo = () => {
-        const onFinish = values => {
-          console.log('Success:', values);
-        };
-      
-    //     const onFinishFailed = errorInfo => {
-    //       console.log('Failed:', errorInfo);
-    //     };
-    //   }
+
+    const onFinish = values => {
+        console.log('Success:', values);
+    };
+ 
     return (
-        <div>
+        <div className="form-container" id="contactme">
+            <Row justify= "center" align="middle"className="form-filter">
             <Form
             {...layout}
             name="basic"
             initialValues={{ remember: true }}
             onFinish={onFinish}
+            className="contact-form"
             >
             <Form.Item
                 
@@ -34,6 +33,7 @@ export default function ContactForm() {
                 rules={[{ required: true, message: 'Please input your username!' }]}
             >
                 <Input 
+                className="contact-form"
                     name="firstName"
                     placeholder="First Name"
                 />
@@ -65,6 +65,7 @@ export default function ContactForm() {
                 </Button>
             </Form.Item>
             </Form>
+            </Row>
         </div>
     )
 }

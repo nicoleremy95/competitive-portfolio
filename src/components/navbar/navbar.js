@@ -29,8 +29,13 @@ export default function Navbar() {
 
     return (
         <>
+        <div>
+            <Row justify="start" className="nicole">
+                <h1 className="nicole-text">Nicole.</h1>
+            </Row>
+           
+        </div>
         <div className="wrapper">
-            
             <Row justify="end">
                 <Col className={menuBtn.menuClass} onClick={handleMenuClick}>
                     <div className="menu-btn_burger"></div>
@@ -45,13 +50,16 @@ export default function Navbar() {
             </Row>
             <Col className={menuBtn.linksClass}>
                 <Row justify="end">
-                    <a type="text" className="nav-btns" >porfolio</a> 
+                    <a to="porfolio"type="text" className="nav-btns">porfolio</a> 
                 </Row>
                 <Row justify="end">
-                    <a type="text" className="nav-btns">contact me</a>  
+                    <a to="contactme" type="text" className="nav-btns">contact me</a>  
                 </Row>
                 <Row justify="end">
-                    <a type="text" className="nav-btns">about me</a> 
+                    <a to="aboutme"type="text" className="nav-btns">about me</a> 
+                </Row>
+                <Row justify="end">
+                    <a to="resume" type="text" className="nav-btns">resume</a> 
                 </Row>
             </Col>
         </div>

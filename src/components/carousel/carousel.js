@@ -1,6 +1,7 @@
 import React from 'react'
 import {Carousel, Button} from "antd"
 import 'antd/dist/antd.css';
+
  
 export default function CarouselImage() {
 
@@ -12,29 +13,31 @@ export default function CarouselImage() {
         textAlign: 'center',
         color: '#fff',
         height: '160px',
-          image: "./images/pawslife.png",
-          name: "PawsLife"
+        imageUrl: "../../images/pawslife.png",
+        name: "PawsLife",
+        background: "#272727"
       }
       const drinkMe = {
         lineHeight: '160px',
         textAlign: 'center',
         color: '#fff',
         height: '160px',
-          image: "./images/drinkme.png",
-          name: "drinkMe"
+        imageUrl: "../../images/drinkme.png",
+        name: "drinkMe",
+        background: "#272727"
       }
       const planit = {
         lineHeight: '160px',
         textAlign: 'center',
-        color: '#fff',
+        color: "#fff",
         height: '160px',
-        image: "./images/planit.png",
-        name: "PLANiT"
-      }
+        imageUrl: "../../images/planit.png",
+        name: "PLANiT",
+        background: "#272727"
+      } 
 
 
-        // backgroundImage: '../../../public/images/pawslife.png',
-
+    console.log('planit.imageUrl', planit.imageUrl)
     
     return (
         <>
@@ -44,6 +47,7 @@ export default function CarouselImage() {
                 autoplay>
                 <div>
                     <h3 style={planit}>{planit.name}</h3>
+                    <img src="../../images/planit.png" alt={planit.name}></img>
                     <Button
                         type="link"
                     >
@@ -52,11 +56,21 @@ export default function CarouselImage() {
                 </div>
                 <div>
                     <h3 style={pawsLife}>{pawsLife.name}</h3>
-                    {/* <img src={pawsLife.imgUrl}></img> */}
+                    <img src="../../images/pawslife.png" alt={pawsLife.name}></img>
+                    <Button
+                        type="link"
+                    >
+                        read more
+                    </Button>
                 </div>
                 <div>
                     <h3 style={drinkMe}>{drinkMe.name}</h3>
-                    {/* <img src={drinkMe.imgUrl}></img> */}
+                    <img src="../../images/drinkme.png" alt={drinkMe.name}></img>
+                    <Button
+                        type="link"
+                    >
+                        read more
+                    </Button>
                 </div>
             </Carousel>
         </div>
