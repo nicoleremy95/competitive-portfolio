@@ -1,6 +1,7 @@
 import React from 'react'
 import {Carousel, Button} from "antd"
 import 'antd/dist/antd.css';
+import planitb from "../../images/planit.png"
 
  
 export default function CarouselImage() {
@@ -47,7 +48,7 @@ export default function CarouselImage() {
                 autoplay>
                 <div>
                     <h3 style={planit}>{planit.name}</h3>
-                    <img src="../../images/planit.png" alt={planit.name}></img>
+                    <img src={planitb} alt={planit.name}></img>
                     <Button
                         type="link"
                     >

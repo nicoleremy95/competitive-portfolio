@@ -1,9 +1,16 @@
-import React from 'react'
-import { Form, Input, Button,Row } from 'antd';
+import React, {useState} from 'react'
+import { Form, Input, Button,Row, notification } from 'antd';
 import '../contactForm/contactform.css'
 
 
 export default function ContactForm() {
+    const [formInput, setFormInput] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: ""
+    })
+
     const layout = {
         labelCol: { span: 8 },
         wrapperCol: { span: 16 },
@@ -12,9 +19,24 @@ export default function ContactForm() {
         wrapperCol: { offset: 8, span: 16 },
       };
       
+    function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormInput({ ...formInput, [name]: value })
+    }
 
     const onFinish = values => {
         console.log('Success:', values);
+        const args = {
+            message: 'Thanks for the email! I will get back to you shortly.',
+            duration: 2,
+          };
+          notification.open(args);
+          setFormInput({
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: ""
+          })
     };
  
     return (
@@ -29,33 +51,54 @@ export default function ContactForm() {
             >
             <Form.Item
                 
-                name="username"
-                rules={[{ required: true, message: 'Please input your username!' }]}
+                name="firstName"
+                rules={[{ required: true, message: 'Please input your first name!' }]}
             >
                 <Input 
-                className="contact-form"
+                    value={formInput.firstName}
+                    onChange={handleInputChange}
                     name="firstName"
-                    placeholder="First Name"
+                    placeholder="Jane"
+                    type="text"
                 />
             </Form.Item>
 
             <Form.Item
                 name="lastName"
-                rules={[{ required: true, message: 'Please input your password!' }]}
+                rules={[{ required: true, message: 'Please input your last name' }]}
             >
                 <Input
+                    value={formInput.lastName}
+                    onChange={handleInputChange}
                     name="lastName"
-                    placeholder="Last Name"
+                    placeholder="Doe"
+                    type="text"
+                />
+            </Form.Item>
+
+            <Form.Item
+                name="email"
+                rules={[{ required: true, message: 'Please input your email!' }]}
+            >
+                <Input
+                    value={formInput.email}
+                    onChange={handleInputChange}
+                    name="email"
+                    placeholder="jane@doe.com"
+                    type="email"
                 />
             </Form.Item>
 
             <Form.Item
                 name="message"
-                rules={[{ required: true, message: 'Please input your password!' }]}
+                rules={[{ required: true, message: 'Please include a message!' }]}
             >
                 <Input.TextArea
+                    value={formInput.message}
+                    onChange={handleInputChange}
                     name="message"
                     placeholder="Hey Nicole..."
+                    
                 />
             </Form.Item>
 

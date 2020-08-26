@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Row, Col, Button } from 'antd';
-
+import { Link } from 'react-scroll';
+import 'antd/dist/antd.css';
 import "./navbar.css"
 
 export default function Navbar() {
