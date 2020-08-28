@@ -6,4 +6,8 @@
     background-size: cover; 
     height: 100vh;
 }
-
+.resume{
+    transition: all .5s ease-in-out;
+    transform: translateY(-30px);
+    
+}

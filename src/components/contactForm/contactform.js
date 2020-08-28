@@ -27,7 +27,7 @@ export default function ContactForm() {
     const onFinish = values => {
         console.log('Success:', values);
         const args = {
-            message: 'Thanks for the email! I will get back to you shortly.',
+            message: 'Thanks for the email - I will get back to you shortly!',
             duration: 2,
           };
           notification.open(args);
