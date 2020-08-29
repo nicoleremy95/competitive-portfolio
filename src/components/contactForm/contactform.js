@@ -41,7 +41,8 @@ export default function ContactForm() {
  
     return (
         <div className="form-container" id="contactme">
-            <Row justify= "center" align="middle"className="form-filter">
+ 
+            <Row justify= "center" align="middle" className="form-filter">
             <Form
             {...layout}
             name="basic"

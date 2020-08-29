@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { Link } from "react-router-dom"
 import {Card, Col, Button, Modal, Row} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
@@ -21,26 +20,8 @@ const { Meta } = Card;
 
 export default function Portfolio() {
     const portfolioArr= [
-    {
-        name: "PawsLife",
-        img: pawsLifeImg,
-        type: "Group Project",
-        role: "Routes, Front End Design, CRUD Functionality",
-        description: "This application is a social community website of pet owners and pet service providers.",
-        info: "This application is a social community website of pet owners and pet service providers. Pawslife gives the user the ability to create an account as a pet owner of a dog or cat, and or a pet provider for dogs or cats. As an owner, a user can keep track of all of their pets for which they can book provider services. As a provider, a user can post pet care services for other members of pawslife to book. This application has full CRUD for user accounts and CRD for pets and posts.",
-        github: "https://github.com/rickyg218/PawsLIfe-",
-        app: "https://pawslife.herokuapp.com/"
-    },
-    {
-        name: "drinkMe",
-        img: drinkMeImg,
-        type: "Group Project",
-        role: "Project Manager",
-        description: "Find cocktail recipes, nearby grocery stores for ingredients, and local breweries near you!",
-        info: "Don’t feel like going out to a bar or restaurant with your friends to grab a drink? Go ahead and invite them over! No stress if you don’t know what drink to make or how to make it, drinkME allows you to find the drink that fits the mood by giving you the ability to generate recipes on the fly. If you're not in the mood for cocktails, we can also help you find the perfect beer and local brewery so you can be on your way to a night full of memories! This application uses four APIs; Google , Punk, Open Brewery, and CocktailDB. For style, we used Materialize.",
-        github: "https://github.com/derek-watson14/drinkME",
-        app: "https://derek-watson14.github.io/drinkME/"
-      },
+    
+    
      {
         name: "PLANiT",
         img: planitImg,
@@ -52,12 +33,51 @@ export default function Portfolio() {
         app: "https://travelplanit.herokuapp.com/",
       } ,
 
+      {
+        name: "PawsLife",
+        img: pawsLifeImg,
+        type: "Group Project",
+        role: "Routes, Front End Design, CRUD Functionality",
+        description: "This application is a social community website of pet owners and pet service providers.",
+        info: "This application is a social community website of pet owners and pet service providers. Pawslife gives the user the ability to create an account as a pet owner of a dog or cat, and or a pet provider for dogs or cats. As an owner, a user can keep track of all of their pets for which they can book provider services. As a provider, a user can post pet care services for other members of pawslife to book. This application has full CRUD for user accounts and CRD for pets and posts.",
+        github: "https://github.com/rickyg218/PawsLIfe-",
+        app: "https://pawslife.herokuapp.com/"
+    },
+    {
+      name: "drinkMe",
+      img: drinkMeImg,
+      type: "Group Project",
+      role: "Project Manager",
+      description: "Find cocktail recipes, nearby grocery stores for ingredients, and local breweries near you!",
+      info: "Don’t feel like going out to a bar or restaurant with your friends to grab a drink? Go ahead and invite them over! No stress if you don’t know what drink to make or how to make it, drinkME allows you to find the drink that fits the mood by giving you the ability to generate recipes on the fly. If you're not in the mood for cocktails, we can also help you find the perfect beer and local brewery so you can be on your way to a night full of memories! This application uses four APIs; Google , Punk, Open Brewery, and CocktailDB. For style, we used Materialize.",
+      github: "https://github.com/derek-watson14/drinkME",
+      app: "https://derek-watson14.github.io/drinkME/"
+    },
+    {
+      name: "Budget Tracker",
+      img: budgetTrackerImg,
+      type: "homework",
+      description: "This application is a budget application that allows the user to update their budget offline and online",
+      info: "This application is a budget application that allows the user to update their budget offline and online. The user has the ability to add deposits and add expenses both online and offline. This ability is from the manifest.webmanifest.json and the service worker file. This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer.",
+      github: "https://github.com/nicoleremy95/budget-tracker",
+      app: "https://ner-budget-tracker.herokuapp.com/"
+    },
+    {
+      name: "Employee Directory",
+      img: employeeDirectoryImg,
+      type: "homework",
+      description: "This application is an employee directory made with React accessing a public random user directory api",
+      info: "This application is an employee directory made with React accessing a public random user directory api.The user can sort and filter through the employees. This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer.",
+      github: "https://github.com/nicoleremy95/employeedirectory",
+      app: "https://serene-shelf-43817.herokuapp.com/"
+    },
+
      {
         name: "Eat Da Burger ",
         img: burgerImg,
         type: "homework",
         description: "This application creates a burger logger using MySQL, Node, Express, Express Handlebars, ORM, and an MVC design pattern. You can create a burger, decided if you want to eat it right away or wait, and then once it is logged you can choose to eat it, recreate it, or delete it. This application has full CRUD functionality. This application is deployed to Heroku.",
-        info: "",
+        info: "This application creates a burger logger using MySQL, Node, Express, Express Handlebars, ORM, and an MVC design pattern. You can create a burger, decided if you want to eat it right away or wait, and then once it is logged you can choose to eat it, recreate it, or delete it. This application has full CRUD functionality. This application is deployed to Heroku.",
         github: "https://github.com/nicoleremy95/burger_restaurant",
         app: "https://ner-burger.herokuapp.com"
       },
@@ -82,7 +102,7 @@ export default function Portfolio() {
         name: "Coding Assesment",
         img: codingAssesmentImg,
         type: "homework",
-        description: "60 second coding assesment.",
+        description: "60 second coding assesment using Javascript.",
         info: "You have 60 seconds to complete the quiz. When you answer a question right, you will gain a point, if you answer the question incorrectly, you lose 5 seconds from your time. The quiz also shows your quiz progress and the time left; both of these elements clear out and go back to their starting values when the record score button is clicked.I have made this quiz dynamic through JavaScript. It features only one HTML and elements that appear and disappear with the help of CSS display, and appending new elements to the page with Javascript. The quiz is also mobile responsive and adapts to the users screen size.This quiz also uses local storage to keep track of the user's score. The quiz then appends the user's score to the top of the page.",
         github: "https://github.com/nicoleremy95/hw4_coding_assesment",
         app: "https://nicoleremy95.github.io/hw4_coding_assesment/"
@@ -91,7 +111,7 @@ export default function Portfolio() {
         name: "Password Generator",
         img: passwordGeneratorImg,
         type: "homework",
-        description: "Random password generator",
+        description: "Random password generator that generates a password between 8-128 characters",
         info: "In this project, I have created a password generator that will randomly choose a password given set criteria from the user. This will allow the user to use the resulting password to protect their sensitive data.When you click the generate password button, it will prompt you to specify the length between 8-128 characters. If you do not enter a value in this range, I have an alert that will tell the user it is not a valid answer, and while loop that will repeat the question.After this, it will ask you to confirm yes or cancel to the following questions; do you want to use upper case characters?, do you want to use lowercase characters?, do you want to use numbers?, do you want to use symbols? Each of these questions results in an array of values that will ultimately be put into the function to create the password. If the user answers 'cancel' to all of these questions, an alert will tell the user to select at least one of characters, and a while loop will bring them to the beginning of the confirm section again.The resulting array will then by mixed, trimmed to the length specified by the user, and then the resulting array should be transferred into a string for the generate password function.",
         github: "https://github.com/nicoleremy95/hw3_passwordgenerator",
         app: "https://nicoleremy95.github.io/hw4_coding_assesment/"
@@ -105,24 +125,8 @@ export default function Portfolio() {
         github: "https://github.com/nicoleremy95/hw5_workday_scheduler/blob/master/index.html",
         app: "https://nicoleremy95.github.io/hw5_workday_scheduler/"
       },
-      {
-        name: "Budget Tracker",
-        img: budgetTrackerImg,
-        type: "homework",
-        description: "This application is a budget application that allows the user to update their budget offline and online",
-        info: "This application is a budget application that allows the user to update their budget offline and online. The user has the ability to add deposits and add expenses both online and offline. This ability is from the manifest.webmanifest.json and the service worker file. This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer.",
-        github: "https://github.com/nicoleremy95/budget-tracker",
-        app: "https://ner-budget-tracker.herokuapp.com/"
-      },
-        {
-        name: "Employee Directory",
-        img: employeeDirectoryImg,
-        type: "homework",
-        description: "This application is an employee directory made with React accessing a public random user directory api",
-        info: "This application is an employee directory made with React accessing a public random user directory api.The user can sort and filter through the employees. This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer.",
-        github: "https://github.com/nicoleremy95/employeedirectory",
-        app: "https://serene-shelf-43817.herokuapp.com/"
-      },
+      
+        
       {
         name: "Note Taker",
         img: noteTakerImg,
@@ -161,8 +165,8 @@ export default function Portfolio() {
         console.log('item.name', item.name)
         array.push(
             <Card
+                className="card"
                 hoverable
-                style={{ width: 400, height:400 }}
                 cover={<img alt={item.name} src={item.img} />}
             >
                 <Meta 
@@ -170,7 +174,9 @@ export default function Portfolio() {
                 description={item.description} 
                 />
                 <a href={item.app}>{item.name} app</a>
+                <br></br>
                 <a href={item.github}>{item.name} github</a>
+                <br></br>
                 <Button onClick={showModal}>Read More</Button>
                  
                   <Modal
@@ -178,17 +184,25 @@ export default function Portfolio() {
                     visible={modal.visible}
                     onOk={handleOk}
                     onCancel={handleCancel}
+                    footer={[
+                      <Button key="back" onClick={handleOk}>
+                        Back
+                      </Button>
+                    ]}
                   >
                     <p>{item.info}</p>
                     <a>{item.github}</a>
+                    <br></br>
                     <a>{item.app}</a>
                 </Modal>
             </Card> 
         )
       })
     return (
-        <div id="portfolio">
-       
+        <div id="portfolio" align="center">
+            <hr></hr>
+            <h1>Portfolio</h1>
+            <br></br>
             <Col xxl={{span: 8}} xl={{span: 11}} lg={{ span: 13 }}>
               {array.map(item=>{return item})}
             </Col>

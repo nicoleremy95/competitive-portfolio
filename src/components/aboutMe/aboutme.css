@@ -1,3 +1,8 @@
+p{
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+}
 .aboutme-container{
     background-image: url("../../images/aboutme.jpg");
     background-attachment: fixed;
@@ -13,7 +18,14 @@
 .aboutme-filter{
     /* height: 100%; */
     background-color:white;
-    opacity: 50%;
-    color: black;
+    opacity: 80%;
+   
+    position: absolute;
+    top: 350px;
+    
 
+}
+.links{
+    /* position: absolute; */
+    top: 250px;
 }
