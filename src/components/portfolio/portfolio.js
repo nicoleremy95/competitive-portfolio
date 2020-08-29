@@ -1,5 +1,6 @@
-import React from 'react'
-import {Card} from "antd"
+import React, {useState} from 'react'
+import { Link } from "react-router-dom"
+import {Card, Col, Button, Modal} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"
@@ -27,6 +28,7 @@ export default function Portfolio() {
         role: "Routes, Front End Design, CRUD Functionality",
         description: "This application is a social community website of pet owners and pet service providers.",
         info: "This application is a social community website of pet owners and pet service providers. Pawslife gives the user the ability to create an account as a pet owner of a dog or cat, and or a pet provider for dogs or cats. As an owner, a user can keep track of all of their pets for which they can book provider services. As a provider, a user can post pet care services for other members of pawslife to book. This application has full CRUD for user accounts and CRD for pets and posts.",
+        github: "https://github.com/rickyg218/PawsLIfe-",
         app: "https://pawslife.herokuapp.com/"
     },
     {
@@ -36,7 +38,7 @@ export default function Portfolio() {
         role: "Project Manager",
         description: "Find cocktail recipes, nearby grocery stores for ingredients, and local breweries near you!",
         info: "Don’t feel like going out to a bar or restaurant with your friends to grab a drink? Go ahead and invite them over! No stress if you don’t know what drink to make or how to make it, drinkME allows you to find the drink that fits the mood by giving you the ability to generate recipes on the fly. If you're not in the mood for cocktails, we can also help you find the perfect beer and local brewery so you can be on your way to a night full of memories! This application uses four APIs; Google , Punk, Open Brewery, and CocktailDB. For style, we used Materialize.",
-        github: "",
+        github: "https://github.com/derek-watson14/drinkME",
         app: "https://derek-watson14.github.io/drinkME/"
       },
      {
@@ -45,7 +47,9 @@ export default function Portfolio() {
         type: "Group Project",
         role: "Project Manager",
         description: "PLANiT is a collaborative travel planning app for groups looking to make the most of their next adventure.",
-        info: "PLANiT is a collaborative travel planning app for groups looking to make the most of their next adventure. Users can create planning boards, or maps as we call them, where an unlimited amount of guests can be invited to suggest or vote on plans within user-customized trip catergories (e.g. Resturants, Accommodation, Hikes, Entertainment etc.) The app makes group consensus clear with visual outputs for voting stats and a print itinerary function that ranks the leading suggestions at any given time. Along with a chat room unique to each map, communicating has never been more accessible and centralized. Whether you are trying coordinate plans with a group or are just having fun dreaming about your next vacation, planning a trip has never been easier or as stress free! PLANiT - connecting our world to your plan! PLANiT uses a React.js front end, along with MongoDB to create a robust, full MERN application. Tools and packages that were used to make this application possible include socket.io, nodemailer, react-scroll, react-animate-on-scroll, ant-design, axios, and more. The team has plans to integrate more APIs and features to make PLANiT a travel-prep must-have!"
+        info: "PLANiT is a collaborative travel planning app for groups looking to make the most of their next adventure. Users can create planning boards, or maps as we call them, where an unlimited amount of guests can be invited to suggest or vote on plans within user-customized trip catergories (e.g. Resturants, Accommodation, Hikes, Entertainment etc.) The app makes group consensus clear with visual outputs for voting stats and a print itinerary function that ranks the leading suggestions at any given time. Along with a chat room unique to each map, communicating has never been more accessible and centralized. Whether you are trying coordinate plans with a group or are just having fun dreaming about your next vacation, planning a trip has never been easier or as stress free! PLANiT - connecting our world to your plan! PLANiT uses a React.js front end, along with MongoDB to create a robust, full MERN application. Tools and packages that were used to make this application possible include socket.io, nodemailer, react-scroll, react-animate-on-scroll, ant-design, axios, and more. The team has plans to integrate more APIs and features to make PLANiT a travel-prep must-have!",
+        github: "https://github.com/zackdeacon/planit-backend, https://github.com/zackdeacon/planit-frontend",
+        app: "https://travelplanit.herokuapp.com/",
       } ,
 
      {
@@ -129,6 +133,27 @@ export default function Portfolio() {
         app: "https://nernottakerapi.herokuapp.com/"
       }
     ]
+    const [modal, setModal] = useState({
+      visible: false
+  })
+
+      const showModal = () => {
+        setModal({
+            visible: !modal.visible,
+        });
+    };
+    const handleOk = () => {
+        setModal({
+            visible: false
+        })
+    }
+
+    const handleCancel = () => {
+        setModal({
+            visible: false
+        })
+    }
+    
 
     const array = [];
     console.log('portfolioArr', portfolioArr)
@@ -137,83 +162,35 @@ export default function Portfolio() {
         array.push(
             <Card
                 hoverable
-                style={{ width: 240 }}
+                style={{ width: 400, height:400 }}
                 cover={<img alt={item.name} src={item.img} />}
             >
-                <Meta title={item.name} description={item.description} />
+                <Meta 
+                title={item.name} 
+                description={item.description} 
+                />
+                <a href={item.app}>{item.name} app</a>
+                <a href={item.github}>{item.name} github</a>
+                <Button onClick={showModal}>Read More</Button>
+                 
+                  <Modal
+                    title={item.name}
+                    visible={modal.visible}
+                    onOk={handleOk}
+                    onCancel={handleCancel}
+                  >
+                    <p>{item.info}</p>
+                    <a>{item.github}</a>
+                    <a>{item.app}</a>
+                </Modal>
             </Card> 
         )
       })
     return (
-        <div>
-        {array.map(item=>{return item})}
-        {/* <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={planit.name} src={planitImg} />}
-        >
-            <Meta title={planit.name} description={planit.description} />
-        </Card> */}
-        {/* <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={pawsLife.name} src={pawsLifeImg} />}
-        >
-            <Meta title={pawsLife.name} description={pawsLife.description} />
-        </Card>
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={drinkMe.name} 
-            src={drinkMeImg} 
-            />}
-        >
-            <Meta title={drinkMe.name} description={drinkMe.description} />
-        </Card>
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={eatdaburger.name} 
-            src={drinkMeImg} 
-            />}
-        >
-            <Meta title={eatdaburger.name} description={eatdaburger.description} />
-        </Card>
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={employeeProfiles.name} src={drinkMeImg} />}
-        >
-            <Meta title={employeeProfiles.name} description={employeeProfiles.description} />
-        </Card>
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={weatherDashboard.name} src={planitImg} />}
-        >
-            <Meta title={weatherDashboard.name} description={weatherDashboard.description} />
-        </Card>
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={calendar.name} src={planitImg} />}
-        >
-            <Meta title={calendar.name} description={calendar.description} /> */}
-        {/* </Card>
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={codingAssesment.name} src={planitImg} />}
-        >
-            <Meta title={codingAssesment.name} description={codingAssesment.description} />
-        </Card>
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={codingAssesment.name} src={planitImg} />}
-        >
-            <Meta title={codingAssesment.name} description={codingAssesment.description} />
-        </Card> */}
+        <div id="portfolio">
+          <Col xs={{span: 24}}>
+            {array.map(item=>{return item})}
+            </Col>
         </div>
     )
 }

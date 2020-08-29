@@ -75,6 +75,7 @@
 .nav-links.open .nav-btns {
     transform: translateY(-5px);
     z-index:0;
-    color: white;
+    color: black;
+    margin: 5px;
 }
 

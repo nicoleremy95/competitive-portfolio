@@ -51,16 +51,16 @@ export default function Navbar() {
             </Row>
             <Col className={menuBtn.linksClass}>
                 <Row justify="end">
-                    <a to="porfolio"type="text" className="nav-btns">porfolio</a> 
+                    <Link to="portfolio"type="text" className="nav-btns">porfolio</Link> 
                 </Row>
                 <Row justify="end">
-                    <a to="contactme" type="text" className="nav-btns">contact me</a>  
+                    <Link to="contactme" type="text" className="nav-btns">contact me</Link>  
                 </Row>
                 <Row justify="end">
-                    <a to="aboutme"type="text" className="nav-btns">about me</a> 
+                    <Link to="aboutme"type="text" className="nav-btns">about me</Link> 
                 </Row>
                 <Row justify="end">
-                    <a to="resume" type="text" className="nav-btns">resume</a> 
+                    <Link to="resume" type="text" className="nav-btns">resume</Link> 
                 </Row>
             </Col>
         </div>
