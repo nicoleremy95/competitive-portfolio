@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom"
-import {Card, Col, Button, Modal} from "antd"
+import {Card, Col, Button, Modal, Row} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"
@@ -23,7 +23,7 @@ export default function Portfolio() {
     const portfolioArr= [
     {
         name: "PawsLife",
-        img: planitImg,
+        img: pawsLifeImg,
         type: "Group Project",
         role: "Routes, Front End Design, CRUD Functionality",
         description: "This application is a social community website of pet owners and pet service providers.",
@@ -33,7 +33,7 @@ export default function Portfolio() {
     },
     {
         name: "drinkMe",
-        img: pawsLifeImg,
+        img: drinkMeImg,
         type: "Group Project",
         role: "Project Manager",
         description: "Find cocktail recipes, nearby grocery stores for ingredients, and local breweries near you!",
@@ -43,7 +43,7 @@ export default function Portfolio() {
       },
      {
         name: "PLANiT",
-        img: drinkMeImg,
+        img: planitImg,
         type: "Group Project",
         role: "Project Manager",
         description: "PLANiT is a collaborative travel planning app for groups looking to make the most of their next adventure.",
@@ -188,9 +188,11 @@ export default function Portfolio() {
       })
     return (
         <div id="portfolio">
-          <Col xs={{span: 24}}>
-            {array.map(item=>{return item})}
+       
+            <Col xxl={{span: 8}} xl={{span: 11}} lg={{ span: 13 }}>
+              {array.map(item=>{return item})}
             </Col>
+         
         </div>
     )
 }

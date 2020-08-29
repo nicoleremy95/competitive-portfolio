@@ -1,24 +1,28 @@
 import React,{useState} from 'react'
 import '../resume/resume.css'
-import { Button, Row } from 'antd'
+import { Button, Row, Card } from 'antd'
+import resume from "../../images/resume.jpg"
+
+const { Meta } = Card;
+
 
 export default function Resume() {
-    const [resume, setResume] = useState({
-        isHidden: true, 
-        className: 'resume'
-    })
+    // const [resume, setResume] = useState({
+    //     isHidden: true, 
+    //     className: 'resume'
+    // })
 
-    const ResumeNicole =() =>{
-        return <div className="resume-container"></div>
-    }
+    // const ResumeNicole =() =>{
+    //     return <div className="resume-container"></div>
+    // }
 
-    function showResume() {
-        setResume({
-            isHidden: false,
-            className: 'resume'
-        })
+    // function showResume() {
+    //     setResume({
+    //         isHidden: false,
+    //         className: 'resume'
+    //     })
         
-    }
+    // }
     // const [visibility, setVisibility] = useState({
     //     resume: false,
     //     resumeClass: "resume-hidden"
@@ -38,11 +42,18 @@ export default function Resume() {
     //     }
         
     // }
+
     return (
         <div >
-            <Button onClick={showResume}>show resume</Button>
-            <Row className="resume">
-                {resume.isHidden.false && <ResumeNicole/>}
+            {/* <Button onClick={showResume}>show resume</Button> */}
+            <Row className="resume-container" justify="center">
+                <Card
+                hoverable
+                style={{ width: 700, height:800 }}
+                cover={<img alt="resume" src={resume} />}
+                >
+                </Card>
+                {/* {resume.isHidden.false && <ResumeNicole/>} */}
             </Row>
         </div>
         // <div >

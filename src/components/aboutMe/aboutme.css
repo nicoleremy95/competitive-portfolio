@@ -6,3 +6,14 @@
     background-size: cover; 
     height: 100vh;
 }
+/* .text{
+    background-color: white;
+} */
+
+.aboutme-filter{
+    /* height: 100%; */
+    background-color:white;
+    opacity: 50%;
+    color: black;
+
+}
