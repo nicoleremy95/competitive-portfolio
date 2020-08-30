@@ -16,16 +16,18 @@ p{
 } */
 
 .aboutme-filter{
-    /* height: 100%; */
     background-color:white;
     opacity: 80%;
-   
     position: absolute;
     top: 350px;
-    
-
 }
 .links{
     /* position: absolute; */
     top: 250px;
+}
+
+@media only screen and (max-width: 300px){
+    .aboutme-filter{
+        top: 20px;
+    }
 }

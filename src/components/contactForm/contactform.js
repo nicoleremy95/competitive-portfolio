@@ -104,7 +104,7 @@ export default function ContactForm() {
             </Form.Item>
 
             <Form.Item {...tailLayout}>
-                <Button type="primary" htmlType="submit">
+                <Button type="primary" htmlType="submit" className="submit" justify= "center" align="middle">
                 Submit
                 </Button>
             </Form.Item>
