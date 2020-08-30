@@ -20,13 +20,9 @@ This application is deployed to Heroku. If you go to the deployed site, you can 
 
 ### Images of Employee Profile Process
 
-### Step 1
+### Deployed App
 
-![step 1](public/images_readme/step1.png)
-
-### Step 2
-
-![step 1](public/images_readme/step2.png)
+![deployed app](src/images/readme.png)
 
 
 
