@@ -52,6 +52,6 @@ Please make sure to update tests as appropriate.
 1. [Github](https://github.com/nicoleremy95/competitive-portfolio)
 
 ### Link to Deployed Application
-1. [Budget Tracker](https://ner-portfolio.herokuapp.com/)
+1. [Nicole](https://ner-portfolio.herokuapp.com/)
     
      
