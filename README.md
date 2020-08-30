@@ -5,8 +5,7 @@ Welcome to my professional portfolio!
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ### Description
-This application is a budget application that allows the user to update their budget offline and online. The user has the ability to add deposits and add expenses both online and offline. This ability is from the manifest.webmanifest.json and the service worker file.
-
+This application is a portfolio of my work as a web developer. It is a react app that utilizes Ant Design as a framework. My portfolio includes a section about me, all of my projects, my resume, and a contact form at the bottom. 
 
 This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer. 
 
@@ -35,7 +34,7 @@ This application is deployed to Heroku. If you go to the deployed site, you can 
 In terminal, please make sure to npm init -y and npm i to import all dependencies. Test offline by going into your dev tools, Network, and then offline.  
 
 ### Usage
-This application can be used to track budget off and online. 
+This application is my personal professional portfolio. 
 
 ### License 
 
@@ -50,9 +49,9 @@ Please make sure to update tests as appropriate.
 
 
 ### Questions
-1. [Github](https://github.com/nicoleremy95/budget-tracker)
+1. [Github](https://github.com/nicoleremy95/competitive-portfolio)
 
 ### Link to Deployed Application
-1. [Budget Tracker](https://ner-budget-tracker.herokuapp.com/)
+1. [Budget Tracker](https://ner-portfolio.herokuapp.com/)
     
      

@@ -26,8 +26,3 @@ p{
     top: 250px;
 }
 
-@media only screen and (max-width: 300px){
-    .aboutme-filter{
-        top: 20px;
-    }
-}
