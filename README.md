@@ -4,6 +4,10 @@ Welcome to my professional portfolio!
 
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+
+### Link to Deployed Application
+1. [Nicole](https://ner-portfolio.herokuapp.com/)
+
 ### Description
 This application is a portfolio of my work as a web developer. It is a react app that utilizes Ant Design as a framework. My portfolio includes a section about me, all of my projects, my resume, and a contact form at the bottom. 
 
@@ -47,7 +51,5 @@ Please make sure to update tests as appropriate.
 ### Questions
 1. [Github](https://github.com/nicoleremy95/competitive-portfolio)
 
-### Link to Deployed Application
-1. [Nicole](https://ner-portfolio.herokuapp.com/)
     
      
