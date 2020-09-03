@@ -1,6 +1,11 @@
 body{
     background-color: #eee;
 }
+
+p{
+    font-size: 15px;
+}
+
 .card{
 height: 400px;
 width: 500px;
