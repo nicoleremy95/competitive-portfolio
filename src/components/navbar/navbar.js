@@ -32,7 +32,7 @@ export default function Navbar() {
         <>
         <div>
             <Row justify="start" className="nicole">
-                <h1 className="nicole-text">Nicole.</h1>
+                <h1 className="nicole-text">Nicole. Full Stack Web Developer. </h1>
             </Row>
            
         </div>
