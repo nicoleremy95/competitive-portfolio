@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Card, Col, Button, Modal, Row} from "antd"
+import {Card, Col, Button, Modal, Row, Space} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"
@@ -132,6 +132,7 @@ export default function Portfolio() {
       portfolioArr.map(item=>{
         console.log('item.name', item.name)
         array.push(
+          <Space direction="vertical">
             <Card
                 className="card"
                 hoverable
@@ -165,6 +166,7 @@ export default function Portfolio() {
                     <a>{item.app}</a>
                 </Modal> */}
             </Card> 
+          </Space>
         )
       })
     return (

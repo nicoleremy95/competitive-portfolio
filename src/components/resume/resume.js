@@ -19,9 +19,6 @@ export default function Resume() {
                 >
                 </Card>
             </Row>
-            <hr></hr>
-            <h1>Contact Me</h1>
-            <br></br>
         </div>
 
     )
