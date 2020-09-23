@@ -14,6 +14,10 @@ import mongoNodeExpressImg from "../../images/mongo_node_express.jpeg"
 import htmlImg from "../../images/html.jpeg" 
 import materializeImg from "../../images/materialize.png"
 import sequelizeImg from "../../images/sequelize.png"
+import nodeImg from "../../images/node.png"
+import cliImg from "../../images/cli.jpg"
+import boostrapImg from "../../images/bootstrap.png"
+import javascriptImg from "../../images/javascript.png"
 
 
 
@@ -74,7 +78,6 @@ export default function Portfolio() {
       {
         name: "Budget Tracker",
         img: budgetTrackerImg,
-        tech: "HTML, jQuery, Mongoose, Express",
         tech: [
           <img className="tool-icon" src={htmlImg}/>,
           <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>,          
@@ -90,7 +93,11 @@ export default function Portfolio() {
       {
         name: "Employee Directory",
         img: employeeDirectoryImg,
-        tech: "React, Third Party API",
+        tech: [
+          <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
+          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>
+
+        ],
         type: "homework",
         description: "This application is an employee directory made with React accessing a public random user directory api",
         info: "This application is an employee directory made with React accessing a public random user directory api.The user can sort and filter through the employees. This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer.",
@@ -100,7 +107,12 @@ export default function Portfolio() {
       {
         name: "Employee Profiles CL",
         img: employeeProfilesImg,
-        tech: "Node.js, CLI, Inquirer npm",
+        tech: [
+          <img className="tool-icon" src={nodeImg}/>,
+          <img className="tool-icon" src={cliImg}/>,
+          <img className="tool-icon" src="https://img.icons8.com/windows/32/000000/npm.png"/>
+
+        ],
         type: "homework",
         description: "This CLI creates a website with employee information. Run the program in terminal with node app.js and make sure to install inquirer",
         info: "This application manages a company's employees using node and MySQL through a command-line application using the Inquirer package. The user only has to type node index.js in the terminal to begin the application. After this, the user is prompted to choose from a list of options to either view, add, or update either an employee, role, or department. The application already has a built-in data table and table data for reference found in the schema.sql and seeds.sql file respectively; this should be input into MySQL.To handle edge cases, I added a validate property on each inqurier prompt object validating either a number, string, or empty input. There is also a recursive function that continues to ask the user questions until they choose EXIT. Please note, to run on your computer, please update the 'password' on line 27 of the index.js file to your MySQL password.",
@@ -109,7 +121,12 @@ export default function Portfolio() {
       {
         name: "Coding Assesment",
         img: codingAssesmentImg,
-        tech: "HTML, Bootstrap, Javascript",
+        tech: [
+          <img className="tool-icon" src={htmlImg}/>,
+          <img className="tool-icon" src={javascriptImg}/>,
+          <img className="tool-icon" src={boostrapImg}/>,
+
+        ],
         type: "homework",
         description: "60 second coding assesment using Javascript.",
         info: "You have 60 seconds to complete the quiz. When you answer a question right, you will gain a point, if you answer the question incorrectly, you lose 5 seconds from your time. The quiz also shows your quiz progress and the time left; both of these elements clear out and go back to their starting values when the record score button is clicked.I have made this quiz dynamic through JavaScript. It features only one HTML and elements that appear and disappear with the help of CSS display, and appending new elements to the page with Javascript. The quiz is also mobile responsive and adapts to the users screen size.This quiz also uses local storage to keep track of the user's score. The quiz then appends the user's score to the top of the page.",
@@ -119,7 +136,12 @@ export default function Portfolio() {
       {
         name: "Password Generator",
         img: passwordGeneratorImg,
-        tech: "HTML, Boostrap, Javascript",
+        tech: [
+          <img className="tool-icon" src={htmlImg}/>,
+          <img className="tool-icon" src={javascriptImg}/>,
+          <img className="tool-icon" src={boostrapImg}/>,
+
+        ],
         type: "homework",
         description: "Random password generator that generates a password between 8-128 characters",
         info: "In this project, I have created a password generator that will randomly choose a password given set criteria from the user. This will allow the user to use the resulting password to protect their sensitive data.When you click the generate password button, it will prompt you to specify the length between 8-128 characters. If you do not enter a value in this range, I have an alert that will tell the user it is not a valid answer, and while loop that will repeat the question.After this, it will ask you to confirm yes or cancel to the following questions; do you want to use upper case characters?, do you want to use lowercase characters?, do you want to use numbers?, do you want to use symbols? Each of these questions results in an array of values that will ultimately be put into the function to create the password. If the user answers 'cancel' to all of these questions, an alert will tell the user to select at least one of characters, and a while loop will bring them to the beginning of the confirm section again.The resulting array will then by mixed, trimmed to the length specified by the user, and then the resulting array should be transferred into a string for the generate password function.",
@@ -128,26 +150,7 @@ export default function Portfolio() {
       },
      
     ]
-    const [modal, setModal] = useState({
-      visible: false
-  })
 
-      const showModal = () => {
-        setModal({
-            visible: !modal.visible,
-        });
-    };
-    const handleOk = () => {
-        setModal({
-            visible: false
-        })
-    }
-
-    const handleCancel = () => {
-        setModal({
-            visible: false
-        })
-    }
     
 
     const array = [];
@@ -165,29 +168,11 @@ export default function Portfolio() {
                 title={item.name} 
                 description={item.description} 
                 />
-                <p>{item.tech}</p>
+                <div>{item.tech}</div>
                 <a href={item.app}><img src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/></a>
                 <br></br>
                 <a href={item.github}><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
                 <br></br>
-                {/* <Button onClick={showModal}>Read More</Button>
-                 
-                  <Modal
-                    title={item.name}
-                    visible={modal.visible}
-                    onOk={handleOk}
-                    onCancel={handleCancel}
-                    footer={[
-                      <Button key="back" onClick={handleOk}>
-                        Back
-                      </Button>
-                    ]}
-                  >
-                    <p>{item.info}</p>
-                    <a>{item.github}</a>
-                    <br></br>
-                    <a>{item.app}</a>
-                </Modal> */}
             </Card> 
           </Space>
         )
