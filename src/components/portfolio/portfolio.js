@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {Card, Col, Button, Modal, Row, Space} from "antd"
+import React from 'react'
+import {Card, Col, Space} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"

@@ -32,7 +32,7 @@ export default function Navbar() {
         <>
         <div>
             <Row justify="start" className="nicole">
-                <h1 className="nicole-text">Nicole. Full Stack Web Developer. </h1>
+                <h1 className="nicole-text">Nicole Remy. </h1>
             </Row>
            
         </div>
@@ -58,9 +58,6 @@ export default function Navbar() {
                 </Row>
                 <Row justify="end">
                     <Link to="resume" type="text" className="nav-btns">resume</Link> 
-                </Row>
-                <Row justify="end">
-                    <Link to="contactme" type="text" className="nav-btns">contact me</Link>  
                 </Row>
             </Col>
         </div>
