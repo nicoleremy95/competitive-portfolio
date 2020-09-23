@@ -5,14 +5,15 @@ import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"
 import drinkMeImg from "../../images/drinkme.png"
 import employeeProfilesImg from "../../images/employeeProfilesImg.png"
-import burgerImg from "../../images/burger.png"
 import passwordGeneratorImg from "../../images/passwordGenerator.png"
 import codingAssesmentImg from "../../images/codingAssesment.png"
-import weatherDashboardImg from "../../images/weatherDashboard.png"
-import calendarImg from "../../images/calendar.png"
 import budgetTrackerImg from "../../images/budgetTracker.png"
-import noteTakerImg from "../../images/noteTaker.png"
 import employeeDirectoryImg from "../../images/employeeDirectory.png"
+import antDesignImg from "../../images/antdesign.png"
+import mongoNodeExpressImg from "../../images/mongo_node_express.jpeg"
+import htmlImg from "../../images/html.jpeg" 
+import materializeImg from "../../images/materialize.png"
+import sequelizeImg from "../../images/sequelize.png"
 
 
 
@@ -23,7 +24,12 @@ export default function Portfolio() {
      {
         name: "PLANiT",
         img: planitImg,
-        tech: "React, Ant Design, MongoDB, Mongoose",
+        tech: [
+          <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
+          <img className="tool-icon" src={antDesignImg}/>,
+          <img className="tool-icon" src={mongoNodeExpressImg}/>,
+
+        ],
         type: "Group Project",
         role: "Project Manager",
         description: "PLANiT is a collaborative travel planning app for groups looking to make the most of their next adventure.",
@@ -35,7 +41,13 @@ export default function Portfolio() {
       {
         name: "PawsLife",
         img: pawsLifeImg,
-        tech: "HTML, Materialize, MySQL, Sequelize",
+        tech: [
+          <img className="tool-icon" src={htmlImg}/>,
+          <img className="tool-icon" src={materializeImg}/>,
+          <img className="tool-icon" src={sequelizeImg}/>,
+          <img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/>
+
+        ],
         type: "Group Project",
         role: "Routes, Front End Design, CRUD Functionality",
         description: "This application is a social community website of pet owners and pet service providers.",
@@ -46,7 +58,12 @@ export default function Portfolio() {
       {
         name: "drinkMe",
         img: drinkMeImg,
-        tech: "HTML, Materialize, Third Party APIs",
+        tech: [
+          <img className="tool-icon" src={htmlImg}/>,
+          <img className="tool-icon" src={materializeImg}/>,
+          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>
+
+        ],
         type: "Group Project",
         role: "Project Manager",
         description: "Find cocktail recipes, nearby grocery stores for ingredients, and local breweries near you!",
@@ -58,6 +75,12 @@ export default function Portfolio() {
         name: "Budget Tracker",
         img: budgetTrackerImg,
         tech: "HTML, jQuery, Mongoose, Express",
+        tech: [
+          <img className="tool-icon" src={htmlImg}/>,
+          <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>,          
+          <img className="tool-icon" src={mongoNodeExpressImg}/>,
+
+        ],
         type: "homework",
         description: "This application is a budget application that allows the user to update their budget offline and online",
         info: "This application is a budget application that allows the user to update their budget offline and online. The user has the ability to add deposits and add expenses both online and offline. This ability is from the manifest.webmanifest.json and the service worker file. This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer.",
