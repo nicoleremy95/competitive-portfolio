@@ -14,6 +14,7 @@ import bxlJquery from '@iconify/icons-bx/bxl-jquery';
 import javascriptIcon from '@iconify/icons-logos/javascript';
 import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
+import githubFilled from '@iconify/icons-ant-design/github-filled';
 import "./aboutme.css"
 import profilePictureImg from "../../images/profilePicture.jpeg"
 
@@ -39,7 +40,8 @@ export default function Aboutme() {
                         <Icon icon={bxlJquery} height="50"/>, 
                         <Icon icon={javascriptIcon} height="50"/>,  
                         <Icon icon={bootstrapIcon} height="50"/>,
-                        <Icon icon={folderTypeCli} height="50"/>,          
+                        <Icon icon={folderTypeCli} height="50"/>,  
+                        <Icon icon={githubFilled} height="50"/>        
                     </Row>
                     
                 </Col>

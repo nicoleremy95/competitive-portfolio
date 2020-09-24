@@ -54,8 +54,8 @@ export default function Portfolio() {
         name: "PawsLife",
         img: pawsLifeImg,
         tech: [
-          <Icon icon={html5} height="100" />,          
-          <Icon icon={materializecssIcon}  height="100" />,
+          <Icon icon={html5} height="75" />,          
+          <Icon icon={materializecssIcon}  height="75" />,
           <Icon icon={mysqlIcon}  height="100"/>,
           <Icon icon={npmIcon}  height="100"/>         
         ],
@@ -70,8 +70,8 @@ export default function Portfolio() {
         name: "drinkMe",
         img: drinkMeImg,
         tech: [
-          <Icon icon={html5} height="100" />,          
-          <Icon icon={materializecssIcon}  height="100" />,
+          <Icon icon={html5} height="60" />,          
+          <Icon icon={materializecssIcon}  height="60" />,
           <Icon icon={api1} height="100" />,
 
           
@@ -88,7 +88,7 @@ export default function Portfolio() {
         name: "Budget Tracker",
         img: budgetTrackerImg,
         tech: [
-          <Icon icon={html5} height="100" />,          
+          <Icon icon={html5} height="60" />,          
           <Icon icon={bxlJquery} height="100"/>,         
           <Icon icon={mongodbIcon}  height="100"/>,
           <Icon icon={logoNodejs} height="100" /> ,         
@@ -134,7 +134,7 @@ export default function Portfolio() {
         name: "Coding Assesment",
         img: codingAssesmentImg,
         tech: [
-          <Icon icon={html5} height="100" />,          
+          <Icon icon={html5} height="60" />,          
           <Icon icon={javascriptIcon} height="100"/>,          
           <Icon icon={bootstrapIcon} height="100"/>
 
@@ -149,7 +149,7 @@ export default function Portfolio() {
         name: "Password Generator",
         img: passwordGeneratorImg,
         tech: [
-          <Icon icon={html5} height="100" />,          
+          <Icon icon={html5} height="60" />,          
           <Icon icon={javascriptIcon} height="100"/>,          
           <Icon icon={bootstrapIcon} height="100"/>
         ],
