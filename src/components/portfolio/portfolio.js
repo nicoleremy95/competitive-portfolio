@@ -1,4 +1,6 @@
 import React from 'react'
+import {Icon,InlineIcon} from '@iconify/react';
+import materializecssIcon from '@iconify/icons-logos/materializecss';
 import {Card, Col, Space} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
@@ -11,7 +13,6 @@ import budgetTrackerImg from "../../images/budgetTracker.png"
 import employeeDirectoryImg from "../../images/employeeDirectory.png"
 import antDesignImg from "../../images/antdesign.png"
 import mongoNodeExpressImg from "../../images/mongo_node_express.jpeg"
-import materializeImg from "../../images/materialize.png"
 import sequelizeImg from "../../images/sequelize.png"
 import cliImg from "../../images/cli.jpg"
 
@@ -46,7 +47,7 @@ export default function Portfolio() {
         tech: [
           // <img className="tool-icon" src={htmlImg}/>,
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
-          <img className="tool-icon" src={materializeImg}/>,
+          <Icon icon={materializecssIcon} width="100" height="100" />,
           <img className="tool-icon" src={sequelizeImg}/>,
           <img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/>
 
@@ -64,7 +65,7 @@ export default function Portfolio() {
         tech: [
           // <img className="tool-icon" src={htmlImg}/>,
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
-          <img className="tool-icon" src={materializeImg}/>,
+          <Icon icon={materializecssIcon} width="100" height="100" />,
           <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>
 
         ],
