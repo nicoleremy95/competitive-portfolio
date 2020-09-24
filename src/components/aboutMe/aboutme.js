@@ -5,7 +5,7 @@ import profilePictureImg from "../../images/profilePicture.jpeg"
 
 export default function Aboutme() {
     return (
-        <div  id="aboutme">
+        <div  className="aboutme">
             <Row >
                 <Col span={12} offset={12} className="aboutme-section" >
                     <Row>
@@ -28,18 +28,22 @@ export default function Aboutme() {
                 <br></br>
                 <ul >
                     <li>
-                        <h1 className="text" justify="end" align="start">Full Stack Web Developer</h1>
-                    </li>
-                    <li>
-                        <h2 className="text" justify="end" align="start"> nremy@usc.edu</h2>
-                    </li>
-                    <li>
                         <img 
+                            justify="center"
+                            // align="center"
                             id="profile-picture" 
                             src= {profilePictureImg} 
                         /> 
                     </li>
-                    <li>                
+                    <li>
+                        <h2 
+                            
+                            className="text" 
+                            align="center"> 
+                            nremy@usc.edu
+                        </h2>
+                    </li>
+                    <li align="center">                
                         <a className="contact-icon" href="https://www.linkedin.com/in/nicole-remy-190202166/">
                             <i className="fab fa-linkedin-in"></i>  
                         </a>

@@ -29,7 +29,8 @@ export default function Portfolio() {
         name: "PLANiT",
         img: planitImg,
         tech: [
-          <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
+          <i className="fab fa-react fa-5x"></i>,
+          // <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
           <img className="tool-icon" src={antDesignImg}/>,
           <img className="tool-icon" src={mongoNodeExpressImg}/>,
 
@@ -94,7 +95,8 @@ export default function Portfolio() {
         name: "Employee Directory",
         img: employeeDirectoryImg,
         tech: [
-          <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
+          // <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
+          <i className="fab fa-react fa-5x"></i>,
           <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>
 
         ],
@@ -123,7 +125,8 @@ export default function Portfolio() {
         img: codingAssesmentImg,
         tech: [
           <img className="tool-icon" src={htmlImg}/>,
-          <img className="tool-icon" src={javascriptImg}/>,
+          <i className="fab fa-js skill-icon fa-5x"></i>,
+          // <img className="tool-icon" src={javascriptImg}/>,
           <img className="tool-icon" src={boostrapImg}/>,
 
         ],

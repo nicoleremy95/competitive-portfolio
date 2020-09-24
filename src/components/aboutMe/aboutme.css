@@ -19,7 +19,9 @@ ul{
 /* .text{
     background-color: white;
 } */
-
+.aboutme{
+    height: 70vh;
+}
 .aboutme-section{
     background-color:white;
     position: absolute;
