@@ -1,6 +1,8 @@
 import React from 'react'
 import {Icon,InlineIcon} from '@iconify/react';
 import materializecssIcon from '@iconify/icons-logos/materializecss';
+import mongodbIcon from '@iconify/icons-logos/mongodb';
+import mysqlIcon from '@iconify/icons-cib/mysql';
 import {Card, Col, Space} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
@@ -27,9 +29,8 @@ export default function Portfolio() {
         img: planitImg,
         tech: [
           <i className="fab fa-react fa-5x"></i>,
-          // <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
           <img className="tool-icon" src={antDesignImg}/>,
-          // <img className="tool-icon" src={mongoNodeExpressImg}/>,
+          <Icon icon={mongodbIcon} width="100" height="100"/>,
           <i className="fab fa-node skill-icon fa-5x"></i>
 
         ],
@@ -45,12 +46,9 @@ export default function Portfolio() {
         name: "PawsLife",
         img: pawsLifeImg,
         tech: [
-          // <img className="tool-icon" src={htmlImg}/>,
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <Icon icon={materializecssIcon} width="100" height="100" />,
-          <img className="tool-icon" src={sequelizeImg}/>,
-          <img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/>
-
+          <Icon icon={mysqlIcon} width="100" height="100"/>,         
         ],
         type: "Group Project",
         role: "Routes, Front End Design, CRUD Functionality",
@@ -80,10 +78,10 @@ export default function Portfolio() {
         name: "Budget Tracker",
         img: budgetTrackerImg,
         tech: [
-          // <img className="tool-icon" src={htmlImg}/>,
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>,          
           // <img className="tool-icon" src={mongoNodeExpressImg}/>,
+          <Icon icon={mongodbIcon} width="100" height="100"/>,
           <i className="fab fa-node skill-icon fa-5x"></i>
 
         ],
