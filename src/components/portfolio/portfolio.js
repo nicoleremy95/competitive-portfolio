@@ -11,13 +11,9 @@ import budgetTrackerImg from "../../images/budgetTracker.png"
 import employeeDirectoryImg from "../../images/employeeDirectory.png"
 import antDesignImg from "../../images/antdesign.png"
 import mongoNodeExpressImg from "../../images/mongo_node_express.jpeg"
-import htmlImg from "../../images/html.jpeg" 
 import materializeImg from "../../images/materialize.png"
 import sequelizeImg from "../../images/sequelize.png"
-import nodeImg from "../../images/node.png"
 import cliImg from "../../images/cli.jpg"
-import boostrapImg from "../../images/bootstrap.png"
-import javascriptImg from "../../images/javascript.png"
 
 
 
@@ -32,7 +28,8 @@ export default function Portfolio() {
           <i className="fab fa-react fa-5x"></i>,
           // <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
           <img className="tool-icon" src={antDesignImg}/>,
-          <img className="tool-icon" src={mongoNodeExpressImg}/>,
+          // <img className="tool-icon" src={mongoNodeExpressImg}/>,
+          <i className="fab fa-node skill-icon fa-5x"></i>
 
         ],
         type: "Group Project",
@@ -47,7 +44,8 @@ export default function Portfolio() {
         name: "PawsLife",
         img: pawsLifeImg,
         tech: [
-          <img className="tool-icon" src={htmlImg}/>,
+          // <img className="tool-icon" src={htmlImg}/>,
+          <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <img className="tool-icon" src={materializeImg}/>,
           <img className="tool-icon" src={sequelizeImg}/>,
           <img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/>
@@ -64,7 +62,8 @@ export default function Portfolio() {
         name: "drinkMe",
         img: drinkMeImg,
         tech: [
-          <img className="tool-icon" src={htmlImg}/>,
+          // <img className="tool-icon" src={htmlImg}/>,
+          <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <img className="tool-icon" src={materializeImg}/>,
           <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>
 
@@ -80,9 +79,11 @@ export default function Portfolio() {
         name: "Budget Tracker",
         img: budgetTrackerImg,
         tech: [
-          <img className="tool-icon" src={htmlImg}/>,
+          // <img className="tool-icon" src={htmlImg}/>,
+          <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>,          
-          <img className="tool-icon" src={mongoNodeExpressImg}/>,
+          // <img className="tool-icon" src={mongoNodeExpressImg}/>,
+          <i className="fab fa-node skill-icon fa-5x"></i>
 
         ],
         type: "homework",
@@ -110,7 +111,8 @@ export default function Portfolio() {
         name: "Employee Profiles CL",
         img: employeeProfilesImg,
         tech: [
-          <img className="tool-icon" src={nodeImg}/>,
+          // <img className="tool-icon" src={nodeImg}/>,
+          <i className="fab fa-node skill-icon fa-5x"></i>,
           <img className="tool-icon" src={cliImg}/>,
           <img className="tool-icon" src="https://img.icons8.com/windows/32/000000/npm.png"/>
 
@@ -124,10 +126,12 @@ export default function Portfolio() {
         name: "Coding Assesment",
         img: codingAssesmentImg,
         tech: [
-          <img className="tool-icon" src={htmlImg}/>,
+          // <img className="tool-icon" src={htmlImg}/>,
+          <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <i className="fab fa-js skill-icon fa-5x"></i>,
           // <img className="tool-icon" src={javascriptImg}/>,
-          <img className="tool-icon" src={boostrapImg}/>,
+          // <img className="tool-icon" src={boostrapImg}/>,
+          <i class="fab fa-bootstrap fa-5x"></i>
 
         ],
         type: "homework",
@@ -140,9 +144,12 @@ export default function Portfolio() {
         name: "Password Generator",
         img: passwordGeneratorImg,
         tech: [
-          <img className="tool-icon" src={htmlImg}/>,
-          <img className="tool-icon" src={javascriptImg}/>,
-          <img className="tool-icon" src={boostrapImg}/>,
+          // <img className="tool-icon" src={htmlImg}/>,
+          <i className="fab fa-html5 skill-icon fa-5x"></i>,
+          <i className="fab fa-js skill-icon fa-5x"></i>,
+          // <img className="tool-icon" src={javascriptImg}/>,
+          // <img className="tool-icon" src={boostrapImg}/>,
+          <i class="fab fa-bootstrap fa-5x"></i>
 
         ],
         type: "homework",
@@ -164,17 +171,17 @@ export default function Portfolio() {
           <Space direction="vertical">
             <Card
                 className="card"
-                hoverable
                 cover={<img alt={item.name} src={item.img} />}
             >
                 <Meta 
                 title={item.name} 
                 description={item.description} 
                 />
-                <div>{item.tech}</div>
+                <div className="tool-icon">{item.tech}</div>
                 <a href={item.app}><img src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/></a>
-                <br></br>
+                <p>application</p>
                 <a href={item.github}><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+                <p>github</p>
                 <br></br>
             </Card> 
           </Space>
