@@ -217,7 +217,9 @@ export default function Portfolio() {
             <hr></hr>
             <h1>Portfolio</h1>
             <br></br>
-            <Col xxl={{span: 8}} xl={{span: 11}} lg={{ span: 13 }}>
+            <Col 
+            xxl={{span: 8}} xl={{span: 11}} lg={{ span: 8 }} 
+            className= "porfolio-items">
               {array.map(item=>{return item})}
             </Col>
             <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
