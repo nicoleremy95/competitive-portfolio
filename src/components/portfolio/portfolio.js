@@ -3,6 +3,9 @@ import {Icon,InlineIcon} from '@iconify/react';
 import materializecssIcon from '@iconify/icons-logos/materializecss';
 import mongodbIcon from '@iconify/icons-logos/mongodb';
 import mysqlIcon from '@iconify/icons-cib/mysql';
+import antDesign from '@iconify/icons-logos/ant-design';
+import npmIcon from '@iconify/icons-cib/npm';
+import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
 import {Card, Col, Space} from "antd"
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
@@ -29,9 +32,10 @@ export default function Portfolio() {
         img: planitImg,
         tech: [
           <i className="fab fa-react fa-5x"></i>,
-          <img className="tool-icon" src={antDesignImg}/>,
+          <Icon icon={antDesign} width="100" height="100"/>,
           <Icon icon={mongodbIcon} width="100" height="100"/>,
-          <i className="fab fa-node skill-icon fa-5x"></i>
+          <i className="fab fa-node skill-icon fa-5x"></i>,
+          <Icon icon={npmIcon} width="100" height="100"/>
 
         ],
         type: "Group Project",
@@ -48,7 +52,8 @@ export default function Portfolio() {
         tech: [
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <Icon icon={materializecssIcon} width="100" height="100" />,
-          <Icon icon={mysqlIcon} width="100" height="100"/>,         
+          <Icon icon={mysqlIcon} width="100" height="100"/>,
+          <Icon icon={npmIcon} width="100" height="100"/>         
         ],
         type: "Group Project",
         role: "Routes, Front End Design, CRUD Functionality",
@@ -61,10 +66,10 @@ export default function Portfolio() {
         name: "drinkMe",
         img: drinkMeImg,
         tech: [
-          // <img className="tool-icon" src={htmlImg}/>,
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <Icon icon={materializecssIcon} width="100" height="100" />,
-          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>
+          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>,
+          
 
         ],
         type: "Group Project",
@@ -82,7 +87,8 @@ export default function Portfolio() {
           <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>,          
           // <img className="tool-icon" src={mongoNodeExpressImg}/>,
           <Icon icon={mongodbIcon} width="100" height="100"/>,
-          <i className="fab fa-node skill-icon fa-5x"></i>
+          <i className="fab fa-node skill-icon fa-5x"></i>,
+          <Icon icon={npmIcon} width="100" height="100"/>
 
         ],
         type: "homework",
@@ -97,7 +103,8 @@ export default function Portfolio() {
         tech: [
           // <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
           <i className="fab fa-react fa-5x"></i>,
-          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>
+          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>,
+          <Icon icon={npmIcon} width="100" height="100"/>
 
         ],
         type: "homework",
@@ -112,7 +119,7 @@ export default function Portfolio() {
         tech: [
           // <img className="tool-icon" src={nodeImg}/>,
           <i className="fab fa-node skill-icon fa-5x"></i>,
-          <img className="tool-icon" src={cliImg}/>,
+          <Icon icon={folderTypeCli} width="100" height="100"/>,          
           <img className="tool-icon" src="https://img.icons8.com/windows/32/000000/npm.png"/>
 
         ],
@@ -125,11 +132,8 @@ export default function Portfolio() {
         name: "Coding Assesment",
         img: codingAssesmentImg,
         tech: [
-          // <img className="tool-icon" src={htmlImg}/>,
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <i className="fab fa-js skill-icon fa-5x"></i>,
-          // <img className="tool-icon" src={javascriptImg}/>,
-          // <img className="tool-icon" src={boostrapImg}/>,
           <i class="fab fa-bootstrap fa-5x"></i>
 
         ],
@@ -143,11 +147,8 @@ export default function Portfolio() {
         name: "Password Generator",
         img: passwordGeneratorImg,
         tech: [
-          // <img className="tool-icon" src={htmlImg}/>,
           <i className="fab fa-html5 skill-icon fa-5x"></i>,
           <i className="fab fa-js skill-icon fa-5x"></i>,
-          // <img className="tool-icon" src={javascriptImg}/>,
-          // <img className="tool-icon" src={boostrapImg}/>,
           <i class="fab fa-bootstrap fa-5x"></i>
 
         ],
