@@ -9,6 +9,7 @@ import html5 from '@iconify/icons-logos/html-5';
 import reactIcon from '@iconify/icons-logos/react';
 import bootstrapIcon from '@iconify/icons-logos/bootstrap';
 import logoNodejs from '@iconify/icons-fa-brands/node-js';
+import bxlJquery from '@iconify/icons-bx/bxl-jquery';
 import javascriptIcon from '@iconify/icons-logos/javascript';
 import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
@@ -88,8 +89,7 @@ export default function Portfolio() {
         img: budgetTrackerImg,
         tech: [
           <Icon icon={html5} height="100" />,          
-          <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>,          
-          // <img className="tool-icon" src={mongoNodeExpressImg}/>,
+          <Icon icon={bxlJquery} height="100"/>,         
           <Icon icon={mongodbIcon}  height="100"/>,
           <Icon icon={logoNodejs} height="100" /> ,         
           <Icon icon={npmIcon}  height="100"/>
