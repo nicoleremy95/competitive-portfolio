@@ -29,6 +29,9 @@ max-width: 100px;
     height: 24px;
 }
 
+.ant-space{
+    margin: 20px;
+}
 .portfolio-items{
     margin: 20px;
 }

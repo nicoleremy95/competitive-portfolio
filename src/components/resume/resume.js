@@ -9,14 +9,21 @@ export default function Resume() {
         <div align="center">
             <hr></hr>
             <h1>Resume</h1>
+                
             <br></br>
             <Row className="resume-container" justify="center" id="resume">
                 
                 <Card
+                
                 hoverable
                 style={{ width: 700, height:800 }}
                 cover={<img alt="resume" src={resume} />}
                 >
+                    <a
+                        href={resume}
+                    >
+                        View PDF
+                    </a>
                 </Card>
             </Row>
         </div>
