@@ -35,11 +35,11 @@ export default function Portfolio() {
         name: "PLANiT",
         img: planitImg,
         tech: [
-          <Icon icon={reactIcon} height="100"/>,
-          <Icon icon={antDesign}  height="100"/>,
-          <Icon icon={mongodbIcon}  height="100"/>,
-          <Icon icon={logoNodejs} height="100" /> ,         
-          <Icon icon={npmIcon}  height="100"/>
+          <Icon className="tech-icons" icon={reactIcon} height="50"/>,
+          <Icon className="tech-icons" icon={antDesign}  height="50"/>,
+          <Icon className="tech-icons" icon={mongodbIcon}  height="50"/>,
+          <Icon className="tech-icons" icon={logoNodejs} height="50" /> ,         
+          <Icon className="tech-icons" icon={npmIcon}  height="50"/>
 
         ],
         type: "Group Project",
@@ -54,10 +54,10 @@ export default function Portfolio() {
         name: "PawsLife",
         img: pawsLifeImg,
         tech: [
-          <Icon icon={html5} height="75" />,          
-          <Icon icon={materializecssIcon}  height="75" />,
-          <Icon icon={mysqlIcon}  height="100"/>,
-          <Icon icon={npmIcon}  height="100"/>         
+          <Icon icon={html5} height="50" />,          
+          <Icon icon={materializecssIcon}  height="50" />,
+          <Icon icon={mysqlIcon}  height="50"/>,
+          <Icon icon={npmIcon}  height="50"/>         
         ],
         type: "Group Project",
         role: "Routes, Front End Design, CRUD Functionality",
@@ -72,7 +72,7 @@ export default function Portfolio() {
         tech: [
           <Icon icon={html5} height="60" />,          
           <Icon icon={materializecssIcon}  height="60" />,
-          <Icon icon={api1} height="100" />,
+          <Icon icon={api1} height="50" />,
 
           
 
@@ -89,10 +89,10 @@ export default function Portfolio() {
         img: budgetTrackerImg,
         tech: [
           <Icon icon={html5} height="60" />,          
-          <Icon icon={bxlJquery} height="100"/>,         
-          <Icon icon={mongodbIcon}  height="100"/>,
-          <Icon icon={logoNodejs} height="100" /> ,         
-          <Icon icon={npmIcon}  height="100"/>
+          <Icon icon={bxlJquery} height="50"/>,         
+          <Icon icon={mongodbIcon}  height="50"/>,
+          <Icon icon={logoNodejs} height="50" /> ,         
+          <Icon icon={npmIcon}  height="50"/>
 
         ],
         type: "homework",
@@ -105,9 +105,9 @@ export default function Portfolio() {
         name: "Employee Directory",
         img: employeeDirectoryImg,
         tech: [
-          <Icon icon={reactIcon} height="100"/>,
-          <Icon icon={api1} height="100" />,
-          <Icon icon={npmIcon}  height="100"/>
+          <Icon icon={reactIcon} height="50"/>,
+          <Icon icon={api1} height="50" />,
+          <Icon icon={npmIcon}  height="50"/>
 
         ],
         type: "homework",
@@ -120,9 +120,9 @@ export default function Portfolio() {
         name: "Employee Profiles CL",
         img: employeeProfilesImg,
         tech: [
-          <Icon icon={logoNodejs} height="100" /> ,         
-          <Icon icon={folderTypeCli} height="100"/>,          
-          <Icon icon={npmIcon}  height="100"/>
+          <Icon icon={logoNodejs} height="50" /> ,         
+          <Icon icon={folderTypeCli} height="50"/>,          
+          <Icon icon={npmIcon}  height="50"/>
 
         ],
         type: "homework",
@@ -135,8 +135,8 @@ export default function Portfolio() {
         img: codingAssesmentImg,
         tech: [
           <Icon icon={html5} height="60" />,          
-          <Icon icon={javascriptIcon} height="100"/>,          
-          <Icon icon={bootstrapIcon} height="100"/>
+          <Icon icon={javascriptIcon} height="50"/>,          
+          <Icon icon={bootstrapIcon} height="50"/>
 
         ],
         type: "homework",
@@ -150,8 +150,8 @@ export default function Portfolio() {
         img: passwordGeneratorImg,
         tech: [
           <Icon icon={html5} height="60" />,          
-          <Icon icon={javascriptIcon} height="100"/>,          
-          <Icon icon={bootstrapIcon} height="100"/>
+          <Icon icon={javascriptIcon} height="50"/>,          
+          <Icon icon={bootstrapIcon} height="50"/>
         ],
         type: "homework",
         description: "Random password generator that generates a password between 8-128 characters",

@@ -16,9 +16,9 @@ ul{
     height: 70vh;
     width: 50%;
 } */
-/* .text{
-    background-color: white;
-} */
+.text{
+    margin-right: 30px;
+}
 .aboutme{
     height: 70vh;
 }
