@@ -36,7 +36,9 @@
     ]
   },
   "devDependencies": {
+    "@iconify/icons-carbon": "^1.0.6",
     "@iconify/icons-cib": "^1.0.3",
+    "@iconify/icons-fa-brands": "^1.0.14",
     "@iconify/icons-logos": "^1.0.12",
     "@iconify/icons-vscode-icons": "^1.0.2",
     "@iconify/react": "^1.1.3"

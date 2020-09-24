@@ -5,8 +5,15 @@ import mongodbIcon from '@iconify/icons-logos/mongodb';
 import mysqlIcon from '@iconify/icons-cib/mysql';
 import antDesign from '@iconify/icons-logos/ant-design';
 import npmIcon from '@iconify/icons-cib/npm';
+import html5 from '@iconify/icons-logos/html-5';
+import reactIcon from '@iconify/icons-logos/react';
+import bootstrapIcon from '@iconify/icons-logos/bootstrap';
+import logoNodejs from '@iconify/icons-fa-brands/node-js';
+import javascriptIcon from '@iconify/icons-logos/javascript';
+import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
 import {Card, Col, Space} from "antd"
+import { Tooltip, Button } from 'antd';
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"
@@ -16,10 +23,6 @@ import passwordGeneratorImg from "../../images/passwordGenerator.png"
 import codingAssesmentImg from "../../images/codingAssesment.png"
 import budgetTrackerImg from "../../images/budgetTracker.png"
 import employeeDirectoryImg from "../../images/employeeDirectory.png"
-import antDesignImg from "../../images/antdesign.png"
-import mongoNodeExpressImg from "../../images/mongo_node_express.jpeg"
-import sequelizeImg from "../../images/sequelize.png"
-import cliImg from "../../images/cli.jpg"
 
 
 
@@ -31,11 +34,11 @@ export default function Portfolio() {
         name: "PLANiT",
         img: planitImg,
         tech: [
-          <i className="fab fa-react fa-5x"></i>,
-          <Icon icon={antDesign} width="100" height="100"/>,
-          <Icon icon={mongodbIcon} width="100" height="100"/>,
-          <i className="fab fa-node skill-icon fa-5x"></i>,
-          <Icon icon={npmIcon} width="100" height="100"/>
+          <Icon icon={reactIcon} height="100"/>,
+          <Icon icon={antDesign}  height="100"/>,
+          <Icon icon={mongodbIcon}  height="100"/>,
+          <Icon icon={logoNodejs} height="100" /> ,         
+          <Icon icon={npmIcon}  height="100"/>
 
         ],
         type: "Group Project",
@@ -50,10 +53,10 @@ export default function Portfolio() {
         name: "PawsLife",
         img: pawsLifeImg,
         tech: [
-          <i className="fab fa-html5 skill-icon fa-5x"></i>,
-          <Icon icon={materializecssIcon} width="100" height="100" />,
-          <Icon icon={mysqlIcon} width="100" height="100"/>,
-          <Icon icon={npmIcon} width="100" height="100"/>         
+          <Icon icon={html5} height="100" />,          
+          <Icon icon={materializecssIcon}  height="100" />,
+          <Icon icon={mysqlIcon}  height="100"/>,
+          <Icon icon={npmIcon}  height="100"/>         
         ],
         type: "Group Project",
         role: "Routes, Front End Design, CRUD Functionality",
@@ -66,9 +69,10 @@ export default function Portfolio() {
         name: "drinkMe",
         img: drinkMeImg,
         tech: [
-          <i className="fab fa-html5 skill-icon fa-5x"></i>,
-          <Icon icon={materializecssIcon} width="100" height="100" />,
-          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>,
+          <Icon icon={html5} height="100" />,          
+          <Icon icon={materializecssIcon}  height="100" />,
+          <Icon icon={api1} height="100" />,
+
           
 
         ],
@@ -83,12 +87,12 @@ export default function Portfolio() {
         name: "Budget Tracker",
         img: budgetTrackerImg,
         tech: [
-          <i className="fab fa-html5 skill-icon fa-5x"></i>,
+          <Icon icon={html5} height="100" />,          
           <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>,          
           // <img className="tool-icon" src={mongoNodeExpressImg}/>,
-          <Icon icon={mongodbIcon} width="100" height="100"/>,
-          <i className="fab fa-node skill-icon fa-5x"></i>,
-          <Icon icon={npmIcon} width="100" height="100"/>
+          <Icon icon={mongodbIcon}  height="100"/>,
+          <Icon icon={logoNodejs} height="100" /> ,         
+          <Icon icon={npmIcon}  height="100"/>
 
         ],
         type: "homework",
@@ -101,10 +105,9 @@ export default function Portfolio() {
         name: "Employee Directory",
         img: employeeDirectoryImg,
         tech: [
-          // <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>,
-          <i className="fab fa-react fa-5x"></i>,
-          <img src="https://img.icons8.com/carbon-copy/100/000000/api.png"/>,
-          <Icon icon={npmIcon} width="100" height="100"/>
+          <Icon icon={reactIcon} height="100"/>,
+          <Icon icon={api1} height="100" />,
+          <Icon icon={npmIcon}  height="100"/>
 
         ],
         type: "homework",
@@ -117,10 +120,9 @@ export default function Portfolio() {
         name: "Employee Profiles CL",
         img: employeeProfilesImg,
         tech: [
-          // <img className="tool-icon" src={nodeImg}/>,
-          <i className="fab fa-node skill-icon fa-5x"></i>,
-          <Icon icon={folderTypeCli} width="100" height="100"/>,          
-          <img className="tool-icon" src="https://img.icons8.com/windows/32/000000/npm.png"/>
+          <Icon icon={logoNodejs} height="100" /> ,         
+          <Icon icon={folderTypeCli} height="100"/>,          
+          <Icon icon={npmIcon}  height="100"/>
 
         ],
         type: "homework",
@@ -132,9 +134,9 @@ export default function Portfolio() {
         name: "Coding Assesment",
         img: codingAssesmentImg,
         tech: [
-          <i className="fab fa-html5 skill-icon fa-5x"></i>,
-          <i className="fab fa-js skill-icon fa-5x"></i>,
-          <i class="fab fa-bootstrap fa-5x"></i>
+          <Icon icon={html5} height="100" />,          
+          <Icon icon={javascriptIcon} height="100"/>,          
+          <Icon icon={bootstrapIcon} height="100"/>
 
         ],
         type: "homework",
@@ -147,10 +149,9 @@ export default function Portfolio() {
         name: "Password Generator",
         img: passwordGeneratorImg,
         tech: [
-          <i className="fab fa-html5 skill-icon fa-5x"></i>,
-          <i className="fab fa-js skill-icon fa-5x"></i>,
-          <i class="fab fa-bootstrap fa-5x"></i>
-
+          <Icon icon={html5} height="100" />,          
+          <Icon icon={javascriptIcon} height="100"/>,          
+          <Icon icon={bootstrapIcon} height="100"/>
         ],
         type: "homework",
         description: "Random password generator that generates a password between 8-128 characters",
@@ -168,13 +169,13 @@ export default function Portfolio() {
       portfolioArr.map(item=>{
         console.log('item.name', item.name)
         array.push(
-          <Space direction="vertical">
+          <Space direction="horizontal">
             <Card
                 className="card"
                 cover={<img alt={item.name} src={item.img} />}
             >
                 <Meta 
-                title={item.name} 
+                title={item.name}
                 description={item.description} 
                 />
                 <br></br>
@@ -189,8 +190,23 @@ export default function Portfolio() {
                 <br></br>
                 <br></br>
                 <h3>Links</h3>
-                <a href={item.app}><img src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/></a>,
-                <a href={item.github}><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+                <Tooltip
+                  placement="left"
+                  title="Application"
+                >
+                  <a 
+                    href={item.app}><img 
+                    src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/
+                  ></a>
+                </Tooltip>
+               ,
+               <Tooltip
+                placement="right"
+                title="Github Repository"
+               >
+               <a href={item.github}><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+               </Tooltip>
+                
                 <br></br>
             </Card> 
           </Space>
