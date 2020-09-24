@@ -177,11 +177,20 @@ export default function Portfolio() {
                 title={item.name} 
                 description={item.description} 
                 />
-                <div className="tool-icon">{item.tech}</div>
-                <a href={item.app}><img src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/></a>
-                <p>application</p>
+                <br></br>
+                <hr></hr>
+                <br></br>
+                <br></br>
+                <div>
+                  <h3>Tech</h3>
+                  {item.tech}
+                </div>
+                <hr></hr>
+                <br></br>
+                <br></br>
+                <h3>Links</h3>
+                <a href={item.app}><img src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/></a>,
                 <a href={item.github}><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
-                <p>github</p>
                 <br></br>
             </Card> 
           </Space>
