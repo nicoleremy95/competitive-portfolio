@@ -27,20 +27,13 @@ ul{
     height: 70vh;
 }
 
-.skills {
-    margin-left: 20px;
-    margin-top: -20px;
 
-}
 .contact-icon{
     margin: 10px;
 
 }
 
-.skill-icon{
-    margin: 20px;
-    size: 20px;
-}
+
 .links{
     /* position: absolute; */
     top: 250px;

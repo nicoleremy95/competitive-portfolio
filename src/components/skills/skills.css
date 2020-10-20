@@ -1,0 +1,16 @@
+.skills {
+    padding: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: black;
+    border-width: 10px;
+    background-color: #E4ced0;
+
+}
+
+.skill-icon{
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+    size: 20px;
+}
