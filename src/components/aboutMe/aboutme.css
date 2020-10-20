@@ -7,52 +7,45 @@ p{
 ul{
     list-style-type: none;
 }
-/* .aboutme-container{
-    background-image: url("../../images/aboutme.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover; 
-    height: 70vh;
-    width: 50%;
-} */
-.text{
-    margin-right: 30px;
+
+.aboutme {
 }
+.aboutme-picture{
+    background-color: #e4ced0;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.aboutme-text{
+    margin-top: 70px;
+    background-color: #e4ced0;
+}
+
+.text{
+    margin-right: 100px;
+    margin-left: 70px;
+    font-size: 12pt;
+}
+
 .aboutme{
     height: 70vh;
 }
-.aboutme-section{
-    position: absolute;
-    height: 70vh;
-}
-
 
 .contact-icon{
     margin: 10px;
 
 }
 
-
 .links{
-    /* position: absolute; */
     top: 250px;
-}
-
-.text{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 12pt;
 }
 
 #profile-picture{
     height: 300px;
     border-radius: 50%;
-    margin-bottom: 15px;
-    margin-left: 230px ;
+    margin-left: 100px;
+    margin-top: 50px;
+    
 }
 
-#aboutme {
-    border: black;
-    border-width: 10px;
-}

@@ -15,23 +15,26 @@ import javascriptIcon from '@iconify/icons-logos/javascript';
 import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
+import uw from '../../images/uw.png'
 import "./skills.css"
 
 
 export default function skills() {
     return (
-        <div className="skills">
+        <div >
             <Row
                 align="center"
             >
                 <h1>Skills</h1>
             </Row>
             <Row
-                className="skills" 
-                align="center"
-                gutter={{xs:8, sm: 16, md:24, lg:32}}
+                
             >
                 <Col 
+                    className="skills" 
+                    align="center"
+                    gutter={{xs:8, sm: 16, md:24, lg:32}}
+                    span={14} 
                 >
                             <Icon className= "skill-icon" icon={reactIcon} height="50"/>
                             <Icon className= "skill-icon" icon={antDesign}  height="50"/>
@@ -39,18 +42,6 @@ export default function skills() {
                             <Icon className= "skill-icon" icon={logoNodejs} height="50" />          
                             <Icon className= "skill-icon" icon={npmIcon}  height="50"/>
                             <Icon className= "skill-icon" icon={materializecssIcon}  height="50" />
-                                 
-                </Col>
-            </Row>
-            <Row
-                className="skills" 
-                align="center"
-                gutter={{xs:8, sm: 16, md:24, lg:32}}
-
-            >
-                <Col
-                    
-                >
                             <Icon className= "skill-icon" icon={mysqlIcon}  height="50"/>
                             <Icon className= "skill-icon" icon={html5} height="50" />         
                             <Icon className= "skill-icon" icon={api1} height="50" />
@@ -58,7 +49,16 @@ export default function skills() {
                             <Icon className= "skill-icon" icon={javascriptIcon} height="50"/>  
                             <Icon className= "skill-icon" icon={bootstrapIcon} height="50"/>
                             <Icon className= "skill-icon" icon={folderTypeCli} height="50"/> 
-                            <Icon className= "skill-icon" icon={githubFilled} height="50"/>   
+                            <Icon className= "skill-icon" icon={githubFilled} height="50"/>        
+                </Col>
+                <Col
+                    className="education"
+                    gutter={{xs:8, sm: 16, md:24, lg:32}}
+                    span={8}
+                    offset={10}
+                >
+                    <img src={uw}/>
+                    <img/>
                 </Col>
             </Row>
         </div>
