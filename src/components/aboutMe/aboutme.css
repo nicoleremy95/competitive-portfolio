@@ -8,8 +8,6 @@ ul{
     list-style-type: none;
 }
 
-.aboutme {
-}
 .aboutme-picture{
     background-color: #e4ced0;
     margin-top: 70px;
@@ -20,16 +18,13 @@ ul{
 .aboutme-text{
     margin-top: 70px;
     background-color: #e4ced0;
+    position: absolute;
 }
 
 .text{
     margin-right: 100px;
     margin-left: 70px;
     font-size: 12pt;
-}
-
-.aboutme{
-    height: 70vh;
 }
 
 .contact-icon{

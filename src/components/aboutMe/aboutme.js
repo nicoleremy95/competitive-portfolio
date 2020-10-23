@@ -5,9 +5,12 @@ import profilePictureImg from "../../images/profilePicture.jpeg"
 
 export default function Aboutme() {
     return (
-        <div  className="aboutme">
+        <div >
             <Row>
-                <Col span={8} className="aboutme-picture">
+                <Col 
+                span={8} 
+                className="aboutme-picture"
+                >
                     <ul >
                         <li>
                             <img 
@@ -38,9 +41,14 @@ export default function Aboutme() {
                         </li> 
                     </ul>  
                 </Col>
-                {/* <Col span={14} offset={10} className="aboutme-text">
-                <p className="text" align="justify">Full-stack web developer hoping to utilize a background in Architecture and Interior Design to create a more aesthetically pleasing design and user experience on the web. Worked with project managers to manage client relationships, projects, timelines, budgets, and customer satisfaction during time as an Architecture Associate. Recently graduated from University of Washington with a certificate in Full Stack Development. Previously graduated from the University of Southern California with a Bachelor of Science in GeoDesign. Excellent working with Github for deployment and collaboration and Heroku for deployment. Active problem solver with a passion for user experience and project management. Successfully worked with a team as a project manager on two projects: PLANiT and drinkME and in both instances finished the projects ahead of schedule and had the time and capacity to implement bonus features. I believe I will be an asset to any team to create more efficient, user friendly applications, within timelines and budget.</p>
-                </Col> */}
+                <Col 
+                span={12} 
+                offset={12} 
+                className="aboutme-text">
+                <p className="text" 
+                align="justify"
+                >Full-stack web developer hoping to utilize a background in Architecture and Interior Design to create a more aesthetically pleasing design and user experience on the web. Worked with project managers to manage client relationships, projects, timelines, budgets, and customer satisfaction during time as an Architecture Associate. Recently graduated from University of Washington with a certificate in Full Stack Development. Previously graduated from the University of Southern California with a Bachelor of Science in GeoDesign. Excellent working with Github for deployment and collaboration and Heroku for deployment. Active problem solver with a passion for user experience and project management. Successfully worked with a team as a project manager on two projects: PLANiT and drinkME and in both instances finished the projects ahead of schedule and had the time and capacity to implement bonus features. I believe I will be an asset to any team to create more efficient, user friendly applications, within timelines and budget.</p>
+            </Col>
             </Row>
             
         </div>
