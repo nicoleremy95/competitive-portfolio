@@ -13,7 +13,7 @@ import bxlJquery from '@iconify/icons-bx/bxl-jquery';
 import javascriptIcon from '@iconify/icons-logos/javascript';
 import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
-import {Card, Col, Space} from "antd"
+import {Card, Col, Space, Row} from "antd"
 import { Tooltip, Button } from 'antd';
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
@@ -24,22 +24,23 @@ import passwordGeneratorImg from "../../images/passwordGenerator.png"
 import codingAssesmentImg from "../../images/codingAssesment.png"
 import budgetTrackerImg from "../../images/budgetTracker.png"
 import employeeDirectoryImg from "../../images/employeeDirectory.png"
+import './portfolio.css'
 
 
 
 const { Meta } = Card;
 
-export default function Portfolio() {
+export default function PortfolioOld() {
     const portfolioArr= [
      {
         name: "PLANiT",
         img: planitImg,
         tech: [
-          <Icon className="tech-icons" icon={reactIcon} height="50"/>,
-          <Icon className="tech-icons" icon={antDesign}  height="50"/>,
-          <Icon className="tech-icons" icon={mongodbIcon}  height="50"/>,
-          <Icon className="tech-icons" icon={logoNodejs} height="50" /> ,         
-          <Icon className="tech-icons" icon={npmIcon}  height="50"/>
+          <Icon className="tech-icons" icon={reactIcon} height="25"/>,
+          <Icon className="tech-icons" icon={antDesign}  height="25"/>,
+          <Icon className="tech-icons" icon={mongodbIcon}  height="25"/>,
+          <Icon className="tech-icons" icon={logoNodejs} height="25" /> ,         
+          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "Group Project",
@@ -54,10 +55,10 @@ export default function Portfolio() {
         name: "PawsLife",
         img: pawsLifeImg,
         tech: [
-          <Icon icon={html5} height="50" />,          
-          <Icon icon={materializecssIcon}  height="50" />,
-          <Icon icon={mysqlIcon}  height="50"/>,
-          <Icon icon={npmIcon}  height="50"/>         
+          <Icon className="tech-icons" icon={html5} height="25" />,          
+          <Icon className="tech-icons" icon={materializecssIcon}  height="25" />,
+          <Icon className="tech-icons" icon={mysqlIcon}  height="25"/>,
+          <Icon className="tech-icons" icon={npmIcon}  height="25"/>         
         ],
         type: "Group Project",
         role: "Routes, Front End Design, CRUD Functionality",
@@ -70,9 +71,9 @@ export default function Portfolio() {
         name: "drinkMe",
         img: drinkMeImg,
         tech: [
-          <Icon icon={html5} height="60" />,          
-          <Icon icon={materializecssIcon}  height="60" />,
-          <Icon icon={api1} height="50" />,
+          <Icon className="tech-icons" icon={html5} height="25" />,          
+          <Icon className="tech-icons" icon={materializecssIcon}  height="25" />,
+          <Icon className="tech-icons" icon={api1} height="25" />,
 
           
 
@@ -88,11 +89,11 @@ export default function Portfolio() {
         name: "Budget Tracker",
         img: budgetTrackerImg,
         tech: [
-          <Icon icon={html5} height="60" />,          
-          <Icon icon={bxlJquery} height="50"/>,         
-          <Icon icon={mongodbIcon}  height="50"/>,
-          <Icon icon={logoNodejs} height="50" /> ,         
-          <Icon icon={npmIcon}  height="50"/>
+          <Icon className="tech-icons" icon={html5} height="25" />,          
+          <Icon className="tech-icons" icon={bxlJquery} height="25"/>,         
+          <Icon className="tech-icons" icon={mongodbIcon}  height="25"/>,
+          <Icon className="tech-icons" icon={logoNodejs} height="25" /> ,         
+          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "homework",
@@ -105,9 +106,9 @@ export default function Portfolio() {
         name: "Employee Directory",
         img: employeeDirectoryImg,
         tech: [
-          <Icon icon={reactIcon} height="50"/>,
-          <Icon icon={api1} height="50" />,
-          <Icon icon={npmIcon}  height="50"/>
+          <Icon className="tech-icons" icon={reactIcon} height="25"/>,
+          <Icon className="tech-icons" icon={api1} height="25" />,
+          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "homework",
@@ -120,9 +121,9 @@ export default function Portfolio() {
         name: "Employee Profiles CL",
         img: employeeProfilesImg,
         tech: [
-          <Icon icon={logoNodejs} height="50" /> ,         
-          <Icon icon={folderTypeCli} height="50"/>,          
-          <Icon icon={npmIcon}  height="50"/>
+          <Icon className="tech-icons" icon={logoNodejs} height="25" /> ,         
+          <Icon className="tech-icons" icon={folderTypeCli} height="25"/>,          
+          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "homework",
@@ -134,9 +135,9 @@ export default function Portfolio() {
         name: "Coding Assesment",
         img: codingAssesmentImg,
         tech: [
-          <Icon icon={html5} height="60" />,          
-          <Icon icon={javascriptIcon} height="50"/>,          
-          <Icon icon={bootstrapIcon} height="50"/>
+          <Icon className="tech-icons" icon={html5} height="25" />,          
+          <Icon className="tech-icons" icon={javascriptIcon} height="25"/>,          
+          <Icon className="tech-icons" icon={bootstrapIcon} height="25"/>
 
         ],
         type: "homework",
@@ -149,9 +150,9 @@ export default function Portfolio() {
         name: "Password Generator",
         img: passwordGeneratorImg,
         tech: [
-          <Icon icon={html5} height="60" />,          
-          <Icon icon={javascriptIcon} height="50"/>,          
-          <Icon icon={bootstrapIcon} height="50"/>
+          <Icon className="tech-icons" icon={html5} height="25" />,          
+          <Icon className="tech-icons" icon={javascriptIcon} height="25"/>,          
+          <Icon className="tech-icons" icon={bootstrapIcon} height="25"/>
         ],
         type: "homework",
         description: "Random password generator that generates a password between 8-128 characters",
@@ -171,6 +172,8 @@ export default function Portfolio() {
         array.push(
           <Space direction="horizontal">
             <Card
+                hoverable
+                style={{ width: 300, marginTop: 16 }}
                 className="card"
                 cover={<img alt={item.name} src={item.img} />}
             >
@@ -180,7 +183,6 @@ export default function Portfolio() {
                 />
                 <br></br>
                 <hr></hr>
-                <br></br>
                 <br></br>
                 <div>
                   <h3>Tech</h3>
@@ -204,27 +206,28 @@ export default function Portfolio() {
                 placement="right"
                 title="Github Repository"
                >
-               <a href={item.github}><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+                <a href={item.github}><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
                </Tooltip>
-                
-                <br></br>
             </Card> 
           </Space>
         )
       })
     return (
-        <div id="portfolio" align="center">
+        <div className="portfolio" >
             <hr></hr>
             <h1>Portfolio</h1>
             <br></br>
+            <Row
+              
+            >
             <Col 
-            xxl={{span: 8}} xl={{span: 11}} lg={{ span: 8 }} 
+            xxl={{span: 4}} xl={{span: 4}} lg={{ span: 4 }} md={{span: 8}} sm={{span:12}}
             className= "porfolio-items">
               {array.map(item=>{return item})}
             </Col>
             <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
             <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
-         
+            </Row>
         </div>
     )
 }
