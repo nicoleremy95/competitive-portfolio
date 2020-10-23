@@ -16,7 +16,6 @@ export default function Aboutme() {
                             <img 
                                 id="profile-picture" 
                                 src= {profilePictureImg} 
-                                align="center"
                                 alt="nicole"
                             /> 
                         </li>
@@ -42,8 +41,8 @@ export default function Aboutme() {
                     </ul>  
                 </Col>
                 <Col 
-                span={12} 
-                offset={12} 
+                span={14} 
+                offset={10} 
                 className="aboutme-text">
                 <p className="text" 
                 align="justify"
