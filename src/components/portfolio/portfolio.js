@@ -174,7 +174,7 @@ export default function PortfolioOld() {
             <Card
                 hoverable
                 style={{ width: 300, marginTop: 16 }}
-                className="card"
+                className="cards"
                 cover={<img alt={item.name} src={item.img} />}
             >
                 <Meta 
@@ -218,13 +218,8 @@ export default function PortfolioOld() {
             <h1>Portfolio</h1>
             <br></br>
             <Row
-              
-            >
-            <Col 
-            xxl={{span: 4}} xl={{span: 4}} lg={{ span: 4 }} md={{span: 8}} sm={{span:12}}
-            className= "porfolio-items">
-              {array.map(item=>{return item})}
-            </Col>
+               className= "porfolio-items">
+               {array.map(item=>{return item})}
             <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
             <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
             </Row>
