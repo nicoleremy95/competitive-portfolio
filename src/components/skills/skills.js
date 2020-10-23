@@ -22,13 +22,9 @@ import "./skills.css"
 export default function skills() {
     return (
         <div >
+            
             <Row
-                align="center"
-            >
-                <h1>Skills</h1>
-            </Row>
-            <Row
-                
+                className="skills-and-edu"     
             >
                 <Col 
                     className="skills" 

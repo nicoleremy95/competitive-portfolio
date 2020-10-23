@@ -34,10 +34,10 @@ export default function Navbar() {
             <Row justify="start" className="nicole">
                 <ul className="nicole-section">
                     <li>
-                        <h1 className="nicole-text">Nicole Remy. </h1>
+                        <h1 className="nicole-text"><strong>Nicole Remy.</strong> </h1>
                     </li>
                     <li>
-                        <h1 className="nicole-text">Full Stack Web Developer. </h1>
+                        <h1 className="nicole-title">FULL STACK WEB DEVELOPER. </h1>
                     </li>
                 </ul>
                 
@@ -59,13 +59,16 @@ export default function Navbar() {
             </Row>
             <Col className={menuBtn.linksClass}>
                 <Row justify="end">
-                    <Link to="aboutme"type="text" className="nav-btns">about me</Link> 
+                    <Link to="aboutme"type="text" className="nav-btns">ABOUT ME</Link> 
                 </Row>
                 <Row justify="end">
-                    <Link to="portfolio"type="text" className="nav-btns">porfolio</Link> 
+                    <Link to="skills"type="text" className="nav-btns">SKILLS & EDU</Link> 
                 </Row>
                 <Row justify="end">
-                    <Link to="resume" type="text" className="nav-btns">resume</Link> 
+                    <Link to="portfolio"type="text" className="nav-btns">PORTFOLIO</Link> 
+                </Row>
+                <Row justify="end">
+                    <Link to="resume" type="text" className="nav-btns">RESUME</Link> 
                 </Row>
             </Col>
         </div>
