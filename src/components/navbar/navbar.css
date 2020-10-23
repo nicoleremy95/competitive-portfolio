@@ -4,7 +4,7 @@ h1{
 }
 .nicole{
     background-color: #47798c;
-    height: 25vh;
+    height: 30vh;
     
 }
 .nicole-section{
@@ -25,7 +25,7 @@ h1{
     right: 0;
     z-index:1;
     padding-right: 70px;
-    padding-top: 70px;
+    padding-top: 0px;
 }
 .menu-btn{
     position: relative;
