@@ -1,10 +1,15 @@
+img{
+    max-width: 300px;
+}
+
 .skills {
     padding: 30px;
     margin-left: 70px;
     margin-right: 70px;
     border: black;
     border-width: 10px;
-    background-color: #E4ced0;
+    background-color: #dec3c3;
+    height: 45vh;
 
 }
 
@@ -17,4 +22,18 @@
 
 .skills-and-edu {
     margin-top: 70px;
+}
+
+.education{
+    position: absolute;
+    background-color: #f0e4e4;
+    
+    height: 45vh;
+    margin-right: 70px;
+    padding-top: 80px;
+
+}
+
+.uw{
+    padding-bottom: 20px;
 }

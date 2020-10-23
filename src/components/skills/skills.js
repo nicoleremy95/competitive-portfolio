@@ -15,7 +15,8 @@ import javascriptIcon from '@iconify/icons-logos/javascript';
 import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
-import uw from '../../images/uw.png'
+import uw from '../../images/uw.jpg'
+import usc from '../../images/usc.png'
 import "./skills.css"
 
 
@@ -29,7 +30,7 @@ export default function skills() {
                 <Col 
                     className="skills" 
                     align="center"
-                    gutter={{xs:8, sm: 16, md:24, lg:32}}
+                    // gutter={{xs:8, sm: 16, md:24, lg:32}}
                     span={14} 
                 >
                             <Icon className= "skill-icon" icon={reactIcon} height="50"/>
@@ -49,12 +50,12 @@ export default function skills() {
                 </Col>
                 <Col
                     className="education"
-                    gutter={{xs:8, sm: 16, md:24, lg:32}}
+                    align="center"                    
                     span={8}
-                    offset={10}
+                    offset={16}
                 >
-                    <img src={uw}/>
-                    <img/>
+                    <img className="uw" src={uw}/>
+                    <img className="university" src={usc}/>
                 </Col>
             </Row>
         </div>

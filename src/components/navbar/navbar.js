@@ -37,7 +37,7 @@ export default function Navbar() {
                         <h1 className="nicole-text"><strong>Nicole Remy.</strong> </h1>
                     </li>
                     <li>
-                        <h1 className="nicole-title">FULL STACK WEB DEVELOPER. </h1>
+                        <h1 >FULL STACK WEB DEVELOPER. </h1>
                     </li>
                 </ul>
                 

@@ -16,7 +16,7 @@ h2{
 }
 
 .aboutme-picture{
-    background-color: #e4ced0;
+    background-color: #f0e4e4;
     margin-top: 70px;
     margin-left: 70px;
     margin-right: 70px;
@@ -26,7 +26,7 @@ h2{
 .aboutme-text{
     margin-top: 70px;
     margin-right: 70px;
-    background-color: #e4ced0;
+    background-color: #dec3c3;
     position: absolute;
     height: 60vh;
 }
