@@ -10,22 +10,30 @@ ul{
     padding: 0;
 }
 
+h2{
+    font-size: 12pt;
+    padding-top: 15px;
+}
+
 .aboutme-picture{
     background-color: #e4ced0;
     margin-top: 70px;
     margin-left: 70px;
     margin-right: 70px;
+    height: 60vh;
 }
 
 .aboutme-text{
     margin-top: 70px;
+    margin-right: 70px;
     background-color: #e4ced0;
     position: absolute;
+    height: 60vh;
 }
 
-.text{
-   
-    font-size: 12pt;
+.text-bio{
+    padding: 50px;
+    font-size: 13pt;
 }
 
 .contact-icon{
@@ -39,6 +47,7 @@ ul{
 
 #profile-picture{
     height: 350px; 
+    padding-top: 20px;
     border-radius: 50%;
     display: block;
     margin-left: auto;
