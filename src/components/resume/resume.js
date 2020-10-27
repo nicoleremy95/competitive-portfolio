@@ -6,26 +6,26 @@ import resume from "../../images/resume.jpg"
 export default function Resume() {
 
     return (
-        <div align="center">
-            <hr></hr>
-            <h1>Resume</h1>
-                
-            <br></br>
-            <Row className="resume-container" justify="center" id="resume">
-                
-                <Card
-                
-                hoverable
-                style={{ width: 700, height:800 }}
-                cover={<img alt="resume" src={resume} />}
-                >
+        <div align="center">                
+            <Row
+                align="center"
+                id="resume-link"
+            >
                     <a
                         href={resume}
+                        className="resume-link"
                     >
-                        View PDF
+                        View Resume PDF
                     </a>
-                </Card>
             </Row>
+
+            <Row
+                align="center"
+                id="resume"
+            >
+                <img alt="resume" className="resume" src={resume}/>
+            </Row>
+
         </div>
 
     )

@@ -1,13 +1,30 @@
-.resume-container{
-    /* background-image: url("../../images/resume.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;  */
+a {
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+.resume {
+    max-width: 700px;
+    padding-bottom: 40px;
+}
+
+.resume-link {
+    margin-bottom: 20px;
+}
+
+#resume{
+    background-color: #47798c;
+}
+
+#resume-link {
+    background-color: #47798c;
+}
+/* .resume-container{
     height: 135vh;
 } 
 .resume{
     transition: all .5s ease-in-out;
     transform: translateY(-30px);
     
-}
+} */
