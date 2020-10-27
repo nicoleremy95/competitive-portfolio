@@ -224,7 +224,6 @@ export default function PortfolioOld() {
     return (
         <div className="portfolio" >
             <hr></hr>
-            <h1>Portfolio</h1>
             <br></br>
             <Row
                className= "porfolio-items">
