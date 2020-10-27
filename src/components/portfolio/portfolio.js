@@ -134,6 +134,7 @@ export default function PortfolioOld() {
         description: "This CLI creates a website with employee information. Run the program in terminal with node app.js and make sure to install inquirer",
         info: "This application manages a company's employees using node and MySQL through a command-line application using the Inquirer package. The user only has to type node index.js in the terminal to begin the application. After this, the user is prompted to choose from a list of options to either view, add, or update either an employee, role, or department. The application already has a built-in data table and table data for reference found in the schema.sql and seeds.sql file respectively; this should be input into MySQL.To handle edge cases, I added a validate property on each inqurier prompt object validating either a number, string, or empty input. There is also a recursive function that continues to ask the user questions until they choose EXIT. Please note, to run on your computer, please update the 'password' on line 27 of the index.js file to your MySQL password.",
         github: "https://github.com/nicoleremy95/template_engine_employee_summary",
+        app: "https://drive.google.com/file/d/1QwCm1s24y60vBc7kDLJNDbWrIdjgMnMF/view?usp=sharing",
       },
       {
         name: "Coding Assesment",
