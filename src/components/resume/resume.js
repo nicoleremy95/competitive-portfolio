@@ -6,13 +6,12 @@ import resume from "../../images/resume.jpg"
 export default function Resume() {
 
     return (
-        <div align="center">                
+        <div align="center" className="resume">                
             <Row
                 align="center"
             >
                     <a
                         href={resume}
-                        className="resume-link"
                     >
                         View Resume PDF
                     </a>
@@ -20,9 +19,8 @@ export default function Resume() {
 
             <Row
                 align="center"
-                id="resume"
             >
-                <img alt="resume" className="resume" src={resume}/>
+                <img alt="resume" className="resume-container" src={resume}/>
             </Row>
 
         </div>

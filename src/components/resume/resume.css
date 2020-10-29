@@ -1,10 +1,15 @@
 a {
     font-size: 20px;
     margin-top: 20px;
+    margin-bottom: 10px;
     color: black;
 }
 
-.resume {
+.resume{
+    background-color: #47798c;
+}
+
+.resume-container {
     max-width: 700px;
     padding-bottom: 40px;
 }
@@ -13,18 +18,3 @@ a {
     margin-bottom: 20px;
 }
 
-#resume{
-    background-color: #47798c;
-}
-
-#resume-link {
-    background-color: #47798c;
-}
-/* .resume-container{
-    height: 135vh;
-} 
-.resume{
-    transition: all .5s ease-in-out;
-    transform: translateY(-30px);
-    
-} */
