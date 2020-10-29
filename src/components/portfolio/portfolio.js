@@ -1,5 +1,5 @@
 import React from 'react'
-import {Icon,InlineIcon} from '@iconify/react';
+import {Icon} from '@iconify/react';
 import materializecssIcon from '@iconify/icons-logos/materializecss';
 import mongodbIcon from '@iconify/icons-logos/mongodb';
 import mysqlIcon from '@iconify/icons-cib/mysql';
@@ -13,8 +13,8 @@ import bxlJquery from '@iconify/icons-bx/bxl-jquery';
 import javascriptIcon from '@iconify/icons-logos/javascript';
 import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
-import {Card, Col, Space, Row} from "antd"
-import { Tooltip, Button } from 'antd';
+import {Card, Space, Row} from "antd"
+import { Tooltip } from 'antd';
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"
