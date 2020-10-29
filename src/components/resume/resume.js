@@ -9,7 +9,6 @@ export default function Resume() {
         <div align="center">                
             <Row
                 align="center"
-                id="resume-link"
             >
                     <a
                         href={resume}

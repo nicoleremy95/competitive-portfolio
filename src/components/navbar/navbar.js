@@ -31,7 +31,10 @@ export default function Navbar() {
     return (
         <>
         <div>
-            <Row justify="start" className="nicole">
+            <Row 
+            className="nicole"
+            span={24}
+            >
                 <ul className="nicole-section">
                     <li>
                         <h1 className="nicole-text"><strong>Nicole Remy.</strong> </h1>
