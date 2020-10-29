@@ -1,6 +1,8 @@
 h1{
     padding-left: 70px;
     color: #fff;
+    word-wrap: break-word;
+
 }
 
 .navbar {
@@ -8,10 +10,12 @@ h1{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 .nicole{
     background-color: #47798c;
-    height: 30vh;
+    top: 0;
+    right: 0;
     
 }
 .nicole-section{
@@ -21,17 +25,17 @@ h1{
 }
 .nicole-text{
     
-    margin-top: 40px;
+    margin-top: 20px;
     padding-bottom: 5px;
     margin-bottom: 0px;
 }
 
 .wrapper{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index:1;
-    padding-right: 70px;
+    /* padding-right: 70px; */
     padding-top: 0px;
 }
 .menu-btn{

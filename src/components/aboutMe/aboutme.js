@@ -5,7 +5,7 @@ import profilePictureImg from "../../images/profilePicture.jpeg"
 
 export default function Aboutme() {
     return (
-        <div >
+        <div className="aboutme-container">
             <Row className="about-me">
                 <Col 
                 lg= {{span:8}} sm={{span: 24}} xs={{span:24}}

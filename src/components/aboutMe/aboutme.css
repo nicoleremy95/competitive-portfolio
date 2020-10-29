@@ -15,9 +15,9 @@ h2{
     padding-top: 15px;
 }
 
-/* .aboutme {
-    display: flex;
-} */
+.aboutme-container {
+    margin-top: 150px;
+}
 .aboutme-picture{
     background-color: #f0e4e4;
     margin-top: 70px;

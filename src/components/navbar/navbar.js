@@ -33,9 +33,9 @@ export default function Navbar() {
         <div className="navbar">
             <Row 
             className="nicole"
-            span={24}
+            lg= {{span:24}} md={{span:12}} sm={{span: 12}} xs={{span:12}}
             >
-                <ul className="nicole-section">
+                <ul className="nicole-section" >
                     <li>
                         <h1 className="nicole-text"><strong>Nicole Remy.</strong> </h1>
                     </li>
