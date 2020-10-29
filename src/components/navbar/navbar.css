@@ -11,23 +11,25 @@ h1{
     top: 0;
     width: 100%;
     z-index: 1;
+    background-color: #47798c;
 }
 .nicole{
-    background-color: #47798c;
     top: 0;
     right: 0;
+    margin-bottom: 0px;
     
 }
 .nicole-section{
     margin-top:  30px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
 }
 .nicole-text{
-    
-    margin-top: 20px;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.title{
+    margin-top: 0px;
 }
 
 .wrapper{
@@ -35,7 +37,6 @@ h1{
     top: 0;
     right: 0;
     z-index:1;
-    /* padding-right: 70px; */
     padding-top: 0px;
 }
 .menu-btn{
@@ -102,5 +103,6 @@ h1{
     z-index:0;
     color: white;
     margin: 5px;
+    font-size: 10px;
 }
 

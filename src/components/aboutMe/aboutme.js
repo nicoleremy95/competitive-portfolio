@@ -40,13 +40,17 @@ export default function Aboutme() {
                 </Col>
                 <div className="buffer"></div>
                 <Col 
-                lg= {{span:14}} sm={{span: 24}} xs={{span:24}}
-                offset={10} 
-                className="aboutme-text">
-                <p className="text-bio" 
-                align="justify"
-                ><strong>FULL STACK WEB DEVELOPER</strong>  hoping to utilize a background in Architecture to construct aesthetically pleasing front end design and efficient back end logic. Worked with project managers to manage client relationships, projects, timelines, budgets, and customer satisfaction during time as an Architecture Associate. Recently graduated from University of Washington with a certificate in Full Stack Development. Previously graduated from the University of Southern California with a Bachelor of Science in GeoDesign. Excellent working with Github for deployment and collaboration and Heroku for deployment. Active problem solver with a passion for user experience and project management. Successfully worked with a team as a project manager on two projects: <a href="https://travelplanit.herokuapp.com/"><strong>PLANiT </strong></a> and <a href="https://derek-watson14.github.io/drinkME/"><strong>drinkME</strong></a> and in both instances finished the projects ahead of schedule and had the time and capacity to implement bonus features. I believe I will be an asset to any team to create more efficient, user friendly applications, within timelines and budget.</p>
-            </Col>
+                    lg= {{span:14}} sm={{span: 24}} xs={{span:24}}
+                    offset={10} 
+                    className="aboutme-text"
+                >
+                    <p 
+                        className="text-bio" 
+                        align="justify"
+                    >
+                        <strong>FULL STACK WEB DEVELOPER</strong>  hoping to utilize a background in Architecture to construct aesthetically pleasing front end design and efficient back end logic. Worked with project managers to manage client relationships, projects, timelines, budgets, and customer satisfaction during time as an Architecture Associate. Recently graduated from University of Washington with a certificate in Full Stack Development. Previously graduated from the University of Southern California with a Bachelor of Science in GeoDesign. Excellent working with Github for deployment and collaboration and Heroku for deployment. Active problem solver with a passion for user experience and project management. Successfully worked with a team as a project manager on two projects: <a href="https://travelplanit.herokuapp.com/"><strong>PLANiT </strong></a> and <a href="https://derek-watson14.github.io/drinkME/"><strong>drinkME</strong></a> and in both instances finished the projects ahead of schedule and had the time and capacity to implement bonus features. I believe I will be an asset to any team to create more efficient, user friendly applications, within timelines and budget.
+                    </p>
+                </Col>
             </Row>
             <div className="buffer"></div>
             
