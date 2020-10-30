@@ -224,9 +224,7 @@ export default function PortfolioOld() {
       })
     return (
         <div 
-          className="portfolio" 
-          // align="center"
-        
+          className="portfolio"         
         >
             <hr></hr>
             <br></br>
