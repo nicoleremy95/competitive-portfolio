@@ -30,8 +30,9 @@ export default function skills() {
                 <Col 
                     className="skills" 
                     align="center"
-                    // gutter={{xs:8, sm: 16, md:24, lg:32}}
-                    span={14} 
+                    lg= {{span:14}} 
+                    sm={{span: 24}} 
+                    xs={{span:24}}
                 >
                             <Icon className= "skill-icon" icon={reactIcon} height="50"/>
                             <Icon className= "skill-icon" icon={antDesign}  height="50"/>
@@ -51,11 +52,13 @@ export default function skills() {
                 <Col
                     className="education"
                     align="center"                    
-                    span={8}
-                    offset={16}
+                    lg= {{span:8, offset:16}} 
+                    sm={{span: 24}} 
+                    xs={{span:24}}
+                   
                 >
                     <img className="uw" src={uw}/>
-                    <img className="university" src={usc}/>
+                    <img className="usc" src={usc}/>
                 </Col>
             </Row>
         </div>

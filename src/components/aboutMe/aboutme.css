@@ -31,11 +31,13 @@ h2{
     margin-right: 70px;
     background-color: #dec3c3;
     position: absolute;
-    height: 60vh;
 }
 
 .text-bio{
-    padding: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
     font-size: 13pt;
 }
 
@@ -64,3 +66,11 @@ h2{
     }
     }
 
+@media only screen and (max-width:550px){
+    .aboutme-text{
+        display: flex;
+        justify-content: center;
+
+    }
+    
+}

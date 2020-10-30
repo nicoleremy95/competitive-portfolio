@@ -3,13 +3,13 @@ img{
 }
 
 .skills {
-    padding: 30px;
+    padding: 42px;
     margin-left: 70px;
     margin-right: 70px;
     border: black;
     border-width: 10px;
     background-color: #dec3c3;
-    height: 45vh;
+   
 
 }
 
@@ -27,8 +27,6 @@ img{
 .education{
     position: absolute;
     background-color: #f0e4e4;
-    
-    height: 45vh;
     margin-right: 70px;
     padding-top: 80px;
 
@@ -36,4 +34,8 @@ img{
 
 .uw{
     padding-bottom: 20px;
+}
+
+.usc{
+    padding-bottom: 80px;
 }
