@@ -1,6 +1,6 @@
 import React from 'react'
 import '../resume/resume.css'
-import { Row, Card } from 'antd'
+import { Row } from 'antd'
 import resume from "../../images/resume.jpg"
 
 export default function Resume() {
