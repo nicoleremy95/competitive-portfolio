@@ -1,4 +1,7 @@
 import React from 'react'
+import { Icon, InlineIcon } from '@iconify/react';
+import githubFilled from '@iconify-icons/ant-design/github-filled';
+
 import './Portfolio_card.css'
 
 export default function PortfolioCard(props) {
@@ -12,8 +15,8 @@ export default function PortfolioCard(props) {
         <div className="Portfolio-role">{props.role}</div>
         <div className="Portfolio-tech">{props.tech}</div>
         <div className="Portfolio-description">{props.description}</div>
-        <div className="Portfolio-github">{props.github}</div>
-        <div className="Portfolio-app">{props.app}</div>
+        <a href={props.github}> <img className="Portfolio-github"  src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+        <a href={props.app} > <img className="Portfolio-app"  src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/></a>
     </div>
      
     )

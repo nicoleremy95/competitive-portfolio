@@ -19,8 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    },
-    
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -37,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify-icons/ant-design": "^1.0.0",
     "@iconify/icons-ant-design": "^1.0.8",
     "@iconify/icons-bx": "^1.0.3",
     "@iconify/icons-carbon": "^1.0.6",

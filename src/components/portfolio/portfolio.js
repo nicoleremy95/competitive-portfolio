@@ -37,11 +37,11 @@ export default function PortfolioOld() {
         name: "PLANiT",
         img: planitImg,
         tech: [
-          <Icon className="tech-icons" icon={reactIcon} height="25"/>,
-          <Icon className="tech-icons" icon={antDesign}  height="25"/>,
-          <Icon className="tech-icons" icon={mongodbIcon}  height="25"/>,
-          <Icon className="tech-icons" icon={logoNodejs} height="25" /> ,         
-          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
+          <Icon className="Portfolio-tech-icons" icon={reactIcon} height="25"/>,
+          <Icon className="Portfolio-tech-icons" icon={antDesign}  height="25"/>,
+          <Icon className="Portfolio-tech-icons" icon={mongodbIcon}  height="25"/>,
+          <Icon className="Portfolio-tech-icons" icon={logoNodejs} height="25" /> ,         
+          <Icon className="Portfolio-tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "Group Project",
@@ -56,10 +56,10 @@ export default function PortfolioOld() {
         name: "PawsLife",
         img: pawsLifeImg,
         tech: [
-          <Icon className="tech-icons" icon={html5} height="25" />,          
-          <Icon className="tech-icons" icon={materializecssIcon}  height="25" />,
-          <Icon className="tech-icons" icon={mysqlIcon}  height="25"/>,
-          <Icon className="tech-icons" icon={npmIcon}  height="25"/>         
+          <Icon className="Portfolio-tech-icons" icon={html5} height="25" />,          
+          <Icon className="Portfolio-tech-icons" icon={materializecssIcon}  height="25" />,
+          <Icon className="Portfolio-tech-icons" icon={mysqlIcon}  height="25"/>,
+          <Icon className="Portfolio-tech-icons" icon={npmIcon}  height="25"/>         
         ],
         type: "Group Project",
         role: null,
@@ -73,9 +73,9 @@ export default function PortfolioOld() {
         name: "drinkMe",
         img: drinkMeImg,
         tech: [
-          <Icon className="tech-icons" icon={html5} height="25" />,          
-          <Icon className="tech-icons" icon={materializecssIcon}  height="25" />,
-          <Icon className="tech-icons" icon={api1} height="25" />,
+          <Icon className="Portfolio-tech-icons" icon={html5} height="25" />,          
+          <Icon className="Portfolio-tech-icons" icon={materializecssIcon}  height="25" />,
+          <Icon className="Portfolio-tech-icons" icon={api1} height="25" />,
 
           
 
@@ -91,11 +91,11 @@ export default function PortfolioOld() {
         name: "Budget Tracker",
         img: budgetTrackerImg,
         tech: [
-          <Icon className="tech-icons" icon={html5} height="25" />,          
-          <Icon className="tech-icons" icon={bxlJquery} height="25"/>,         
-          <Icon className="tech-icons" icon={mongodbIcon}  height="25"/>,
-          <Icon className="tech-icons" icon={logoNodejs} height="25" /> ,         
-          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
+          <Icon className="Portfolio-tech-icons" icon={html5} height="25" />,          
+          <Icon className="Portfolio-tech-icons" icon={bxlJquery} height="25"/>,         
+          <Icon className="Portfolio-tech-icons" icon={mongodbIcon}  height="25"/>,
+          <Icon className="Portfolio-tech-icons" icon={logoNodejs} height="25" /> ,         
+          <Icon className="Portfolio-tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "homework",
@@ -109,9 +109,9 @@ export default function PortfolioOld() {
         name: "Employee Directory",
         img: employeeDirectoryImg,
         tech: [
-          <Icon className="tech-icons" icon={reactIcon} height="25"/>,
-          <Icon className="tech-icons" icon={api1} height="25" />,
-          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
+          <Icon className="Portfolio-tech-icons" icon={reactIcon} height="25"/>,
+          <Icon className="Portfolio-tech-icons" icon={api1} height="25" />,
+          <Icon className="Portfolio-tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "homework",
@@ -125,9 +125,9 @@ export default function PortfolioOld() {
         name: "Employee Profiles CL",
         img: employeeProfilesImg,
         tech: [
-          <Icon className="tech-icons" icon={logoNodejs} height="25" /> ,         
-          <Icon className="tech-icons" icon={folderTypeCli} height="25"/>,          
-          <Icon className="tech-icons" icon={npmIcon}  height="25"/>
+          <Icon className="Portfolio-tech-icons" icon={logoNodejs} height="25" /> ,         
+          <Icon className="Portfolio-tech-icons" icon={folderTypeCli} height="25"/>,          
+          <Icon className="Portfolio-tech-icons" icon={npmIcon}  height="25"/>
 
         ],
         type: "homework",
@@ -141,9 +141,9 @@ export default function PortfolioOld() {
         name: "Coding Assesment",
         img: codingAssesmentImg,
         tech: [
-          <Icon className="tech-icons" icon={html5} height="25" />,          
-          <Icon className="tech-icons" icon={javascriptIcon} height="25"/>,          
-          <Icon className="tech-icons" icon={bootstrapIcon} height="25"/>
+          <Icon className="Portfolio-tech-icons" icon={html5} height="25" />,          
+          <Icon className="Portfolio-tech-icons" icon={javascriptIcon} height="25"/>,          
+          <Icon className="Portfolio-tech-icons" icon={bootstrapIcon} height="25"/>
 
         ],
         type: "homework",
@@ -157,9 +157,9 @@ export default function PortfolioOld() {
         name: "Password Generator",
         img: passwordGeneratorImg,
         tech: [
-          <Icon className="tech-icons" icon={html5} height="25" />,          
-          <Icon className="tech-icons" icon={javascriptIcon} height="25"/>,          
-          <Icon className="tech-icons" icon={bootstrapIcon} height="25"/>
+          <Icon className="Portfolio-tech-icons" icon={html5} height="25" />,          
+          <Icon className="Portfolio-tech-icons" icon={javascriptIcon} height="25"/>,          
+          <Icon className="Portfolio-tech-icons" icon={bootstrapIcon} height="25"/>
         ],
         type: "homework",
         role: null,

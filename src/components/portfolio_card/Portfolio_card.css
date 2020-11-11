@@ -1,5 +1,5 @@
 .Portfolio-card{
-    background-color: grey;
+    background-color: #eceff1;
     width: 400px;
     padding: 60px;
     margin-right: 0px;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     background-color: #eceff1;
+    padding-bottom: 10px;
 }
 
 .Portfolio-role{
@@ -26,7 +27,7 @@
 }
 
 .Portfolio-tech{
-    margin: 8px;
+
 }
 
 .Portfolio-description{
@@ -42,19 +43,3 @@
 }
 
 
-.cards {
-    margin: 55px;
-   
-    height: 75vh;
-    justify-content: space-evenly;
-}
-.portfolio {
-    margin: 100px;
-}
-.tech-icons{
-    
-}
-
-.relocate {
-   
-}
