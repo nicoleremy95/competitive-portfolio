@@ -30,25 +30,16 @@ export default function Navbar() {
 
     return (
         <>
-        <div className="navbar">
-            <Row 
-                className="nicole"
-            >
-                <Col
-                    lg= {{span:24}} md={{span:12}} sm={{span: 12}} xs={{span:12}}
-                >
-                    <ul className="Navbar-title" >
-                        <li>
-                            <h1 className="nicole-text"><strong>Nicole Remy.</strong> </h1>
-                        </li>
-                        <li>
-                            <h1 className="title">FULL STACK WEB DEVELOPER. </h1>
-                        </li>
-                    </ul>
-                </Col>
-                
-                
-            </Row>
+        <div className="Navbar">
+            <ul className="Navbar-title" >
+                <li>
+                    <h1 className="Navbar-name"><strong>Nicole Remy.</strong> </h1>
+                </li>
+                <li>
+                    <h1 className="Navbar-description">FULL STACK WEB DEVELOPER. </h1>
+                </li>
+            </ul>
+
            
         </div>
         <div className="wrapper">
