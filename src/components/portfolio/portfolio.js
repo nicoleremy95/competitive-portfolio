@@ -177,49 +177,59 @@ export default function PortfolioOld() {
       portfolioArr.map(item=>{
         console.log('item.name', item.name)
         array.push(
-          <Space direction="horizontal">
-            <Card
-                hoverable
-                style={{ width: 300, marginTop: 16 }}
-                className="cards"
-                cover={<img alt={item.name} src={item.img} />}
-            >
-                <Meta 
-                title={item.name}
-                description={item.description} 
-                align="center"
-                />
-                <br></br>
-                <div align="center">
-                {item.role? <h3>{item.role}*</h3>: null}
-                </div>
-                <br></br>
-                <div align="center">
-                  {item.tech}
-                </div>
-                <hr></hr>
-                <h3 align="center">Links</h3>
-                <li align="center">
-                  <Tooltip
-                    placement="left"
-                    title="Application"
-                  >
-                    <a 
-                      className="relocate"
-                      href={item.app}><img 
-                      src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/
-                    ></a>
-                  </Tooltip>
-                  ,
-                  <Tooltip
-                    placement="right"
-                    title="Github Repository"
-                  >
-                    <a href={item.github} className="relocate"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
-                </Tooltip>
-               </li>
-            </Card> 
-          </Space>
+            <div className="Portfolio-card">
+              <div className="Portfolio-name">{item.name}</div>
+              <div className="Portfolio-image">
+                <img src={item.img} alt={item.name}/>
+              </div>
+              <div className="Portfolio-role">{item.role}</div>
+              <div className="Portfolio-tech">{item.tech}</div>
+              <div className="Portfolio-description">{item.description}</div>
+              <div className="Portfolio-github">{item.github}</div>
+              <div className="Portfolio-app">{item.app}</div>
+            </div>
+            // <Card
+            //     hoverable
+            //     style={{ width: 300, marginTop: 16 }}
+            //     className="cards"
+            //     cover={<img alt={item.name} src={item.img} />}
+            // >
+            //     <Meta 
+            //     title={item.name}
+            //     description={item.description} 
+            //     align="center"
+            //     />
+            //     <br></br>
+            //     <div align="center">
+            //     {item.role? <h3>{item.role}*</h3>: null}
+            //     </div>
+            //     <br></br>
+            //     <div align="center">
+            //       {item.tech}
+            //     </div>
+            //     <hr></hr>
+            //     <h3 align="center">Links</h3>
+            //     <li align="center">
+            //       <Tooltip
+            //         placement="left"
+            //         title="Application"
+            //       >
+            //         <a 
+            //           className="relocate"
+            //           href={item.app}><img 
+            //           src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/
+            //         ></a>
+            //       </Tooltip>
+            //       ,
+            //       <Tooltip
+            //         placement="right"
+            //         title="Github Repository"
+            //       >
+            //         <a href={item.github} className="relocate"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+            //     </Tooltip>
+            //    </li>
+            // </Card> 
+         
         )
       })
     return (
