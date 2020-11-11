@@ -1,4 +1,5 @@
 import React from 'react'
+import './Portfolio_card.css'
 
 export default function PortfolioCard(props) {
     return (

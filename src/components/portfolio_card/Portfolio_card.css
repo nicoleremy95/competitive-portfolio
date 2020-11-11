@@ -1,12 +1,15 @@
 .Portfolio-card{
-    background-color: blue;
+    background-color: grey;
     width: 300px;
     padding: 60px;
-    margin-right: 0px
+    margin-right: 0px;
+    box-shadow: 7px 10px 12px -5px rgba(0,0,0, 0.56);
 }
 
 .Portfolio-name{
-
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 1.5rem;
 }
 
 .Portfolio-image{
@@ -18,7 +21,7 @@
 }
 
 .Portfolio-tech{
-
+    margin: 8px;
 }
 
 .Portfolio-description{
@@ -26,11 +29,11 @@
 }
 
 .Portfolio-github{
-
+    size: 50px;
 }
 
 .Portfolio-app{
-
+    size: 50px;
 }
 
 
@@ -44,9 +47,9 @@
     margin: 100px;
 }
 .tech-icons{
-    margin: 8px;
+    
 }
 
 .relocate {
-    size: 50px;
+   
 }
