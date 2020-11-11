@@ -176,7 +176,7 @@ export default function PortfolioOld() {
             {portfolioArr.map(project =>(
               <PortfolioCard 
                 name={project.name} 
-                image={project.img} 
+                img={project.img} 
                 role={project.role}
                 tech={project.tech}
                 description={project.description}
