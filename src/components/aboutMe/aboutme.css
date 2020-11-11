@@ -1,5 +1,5 @@
 .Aboutme {
-    padding-top: 175px;
+    margin-top: 250px;
 }
 
 .Aboutme-picture-contact {
@@ -12,7 +12,6 @@
 
 .Aboutme-picture{
     height: 350px; 
-    padding-top: 20px;
     border-radius: 50%;
     display: block;
     margin-left: auto;

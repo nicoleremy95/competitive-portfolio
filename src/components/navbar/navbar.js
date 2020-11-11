@@ -37,7 +37,7 @@ export default function Navbar() {
                 <Col
                     lg= {{span:24}} md={{span:12}} sm={{span: 12}} xs={{span:12}}
                 >
-                    <ul className="nicole-section" >
+                    <ul className="Navbar-title" >
                         <li>
                             <h1 className="nicole-text"><strong>Nicole Remy.</strong> </h1>
                         </li>
