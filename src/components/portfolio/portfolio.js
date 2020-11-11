@@ -231,9 +231,13 @@ export default function PortfolioOld() {
             <Row
                className= "porfolio-items">
                {array.map(item=>{return item})}
-            <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
-            <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
             </Row>
+            <div 
+              align="center"
+            >
+              <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
+              <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
+            </div>
         </div>
     )
 }

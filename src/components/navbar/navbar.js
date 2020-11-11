@@ -39,8 +39,6 @@ export default function Navbar() {
                     <h1 className="Navbar-description">FULL STACK WEB DEVELOPER. </h1>
                 </li>
             </ul>
-
-           
         </div>
         <div className="wrapper">
             <Row justify="end">
