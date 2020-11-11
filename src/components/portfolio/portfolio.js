@@ -25,6 +25,7 @@ import codingAssesmentImg from "../../images/codingAssesment.png"
 import budgetTrackerImg from "../../images/budgetTracker.png"
 import employeeDirectoryImg from "../../images/employeeDirectory.png"
 import './portfolio.css'
+import PortfolioCard from '../portfolio_card/Portfolio_card'
 
 
 
@@ -169,85 +170,21 @@ export default function PortfolioOld() {
       },
      
     ]
-
-    
-
-    const array = [];
-    console.log('portfolioArr', portfolioArr)
-      portfolioArr.map(item=>{
-        console.log('item.name', item.name)
-        array.push(
-            <div className="Portfolio-card">
-              <div className="Portfolio-name">{item.name}</div>
-              <div className="Portfolio-image">
-                <img src={item.img} alt={item.name}/>
-              </div>
-              <div className="Portfolio-role">{item.role}</div>
-              <div className="Portfolio-tech">{item.tech}</div>
-              <div className="Portfolio-description">{item.description}</div>
-              <div className="Portfolio-github">{item.github}</div>
-              <div className="Portfolio-app">{item.app}</div>
-            </div>
-            // <Card
-            //     hoverable
-            //     style={{ width: 300, marginTop: 16 }}
-            //     className="cards"
-            //     cover={<img alt={item.name} src={item.img} />}
-            // >
-            //     <Meta 
-            //     title={item.name}
-            //     description={item.description} 
-            //     align="center"
-            //     />
-            //     <br></br>
-            //     <div align="center">
-            //     {item.role? <h3>{item.role}*</h3>: null}
-            //     </div>
-            //     <br></br>
-            //     <div align="center">
-            //       {item.tech}
-            //     </div>
-            //     <hr></hr>
-            //     <h3 align="center">Links</h3>
-            //     <li align="center">
-            //       <Tooltip
-            //         placement="left"
-            //         title="Application"
-            //       >
-            //         <a 
-            //           className="relocate"
-            //           href={item.app}><img 
-            //           src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/
-            //         ></a>
-            //       </Tooltip>
-            //       ,
-            //       <Tooltip
-            //         placement="right"
-            //         title="Github Repository"
-            //       >
-            //         <a href={item.github} className="relocate"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
-            //     </Tooltip>
-            //    </li>
-            // </Card> 
-         
-        )
-      })
     return (
-        <div 
-          className="portfolio"         
-        >
-            <hr></hr>
-            <br></br>
-            <Row
-               className= "porfolio-items">
-               {array.map(item=>{return item})}
-            </Row>
-            <div 
-              align="center"
-            >
-              <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
-              <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a>
-            </div>
+      <div className="Portfolio">
+        <div className="Portfolio-cards">
+            {portfolioArr.map(project =>(
+              <PortfolioCard 
+                name={project.name} 
+                image={project.img} 
+                role={project.role}
+                tech={project.tech}
+                description={project.description}
+                github={project.github}
+                app={project.app}
+              />
+            ))}
         </div>
+      </div>
     )
 }
