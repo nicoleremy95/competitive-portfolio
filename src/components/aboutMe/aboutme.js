@@ -5,34 +5,38 @@ import profilePictureImg from "../../images/profilePicture.jpeg"
 export default function Aboutme() {
     return (
         <div className="Aboutme">
-            <ul >
+            <ul className="Aboutme-picture-contact">
                 <li>
                     <img 
-                        id="profile-picture" 
+                        className="Aboutme-picture"
                         src= {profilePictureImg} 
                         alt="nicole"
                     /> 
                 </li>
                 <li>
                     <h2 
-                        align="center"> 
+                        align="center"
+                        className="Aboutme-email"
+                    > 
                         <strong>nremy@usc.edu</strong>
                     </h2>
                 </li>
-                <li align="center">                
-                    <a className="contact-icon" href="https://www.linkedin.com/in/nicole-remy-190202166/">
+                <li 
+                    align="center"
+                >                
+                    <a className="Aboutme-contact-icon" href="https://www.linkedin.com/in/nicole-remy-190202166/">
                         <i className="fab fa-linkedin-in"></i>  
                     </a>
-                    <a className="contact-icon" href="https://github.com/nicoleremy95">
+                    <a className="Aboutme-contact-icon" href="https://github.com/nicoleremy95">
                         <i class="fab fa-github"></i>
                     </a> 
-                    <a className="contact-icon" href="https://www.instagram.com/nicole_remy/">
+                    <a className="Aboutme-contact-icon" href="https://www.instagram.com/nicole_remy/">
                         <i class="fab fa-instagram"></i>                        
                     </a> 
                 </li> 
             </ul>  
                 <p 
-                    className="text-bio" 
+                    className="Aboutme-bio" 
                     align="justify"
                     
                 >

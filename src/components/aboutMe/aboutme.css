@@ -1,76 +1,40 @@
-p{
-    font-size: 20px;
-    color: black;
-    padding: 20px;
+.Aboutme {
+    padding-top: 175px;
 }
 
-ul{
+.Aboutme-picture-contact {
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-h2{
-    font-size: 12pt;
-    padding-top: 15px;
-}
-
-.Aboutme {
-    margin-top: 150px;
-}
-.aboutme-picture{
-    background-color: #f0e4e4;
-    margin-top: 70px;
-    margin-left: 70px;
-    margin-right: 70px;
-    height: 60vh;
-}
-
-.aboutme-text{
-    margin-top: 70px;
-    margin-right: 70px;
-    background-color: #dec3c3;
-    position: absolute;
-}
-
-.text-bio{
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 40px;
-    font-size: 13pt;
-}
-
-.contact-icon{
-    margin: 10px;
-
-}
-
-.links{
-    top: 250px;
-}
-
-#profile-picture{
+.Aboutme-picture{
     height: 350px; 
     padding-top: 20px;
     border-radius: 50%;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto; 
 }
 
-@media only screen and (max-width: 500px) {
-    .buffer{
-        margin:50px;
-    }
-    }
-
-@media only screen and (max-width:550px){
-    .aboutme-text{
-        display: flex;
-        justify-content: center;
-
-    }
-    
+.Aboutme-email{
+    font-size: 12pt;
+    padding-top: 15px;
 }
+
+.Aboutme-bio{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    font-size: 13pt;
+    color: black;
+}
+
+.Aboutme-contact-icon{
+    margin: 10px;
+
+}
+
