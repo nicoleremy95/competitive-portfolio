@@ -1,41 +1,25 @@
 img{
     max-width: 300px;
 }
-
-.skills {
-    padding: 42px;
-    margin-left: 70px;
-    margin-right: 70px;
-    border: black;
-    border-width: 10px;
-    background-color: #dec3c3;
-   
-
+.Skills{
+    margin: 30px;
 }
-
-.skill-icon{
+.Skills-technologies{
+    display: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Skills-icon{
     margin-right: 40px;
     margin-top: 30px;
     margin-left: 40px;
-    size: 20px;
 }
 
-.skills-and-edu {
-    margin-top: 70px;
+.Skills-education{
+    margin: 50px;
 }
 
-.education{
-    position: absolute;
-    background-color: #f0e4e4;
-    margin-right: 70px;
-    padding-top: 80px;
-
-}
-
-.uw{
-    padding-bottom: 20px;
-}
-
-.usc{
-    padding-bottom: 80px;
+.Skills-education img{
+    padding: 30px;
 }

@@ -20,47 +20,35 @@ import usc from '../../images/usc.png'
 import "./skills.css"
 
 
-export default function skills() {
+export default function Skills() {
     return (
-        <div >
-            
-            <Row
-                className="skills-and-edu"     
+        <div className="Skills">
+            <div 
+                className="Skills-technologies"
+                align="center"
             >
-                <Col 
-                    className="skills" 
-                    align="center"
-                    lg= {{span:14}} 
-                    sm={{span: 24}} 
-                    xs={{span:24}}
-                >
-                            <Icon className= "skill-icon" icon={reactIcon} height="50"/>
-                            <Icon className= "skill-icon" icon={antDesign}  height="50"/>
-                            <Icon className= "skill-icon" icon={mongodbIcon}  height="50"/>
-                            <Icon className= "skill-icon" icon={logoNodejs} height="50" />          
-                            <Icon className= "skill-icon" icon={npmIcon}  height="50"/>
-                            <Icon className= "skill-icon" icon={materializecssIcon}  height="50" />
-                            <Icon className= "skill-icon" icon={mysqlIcon}  height="50"/>
-                            <Icon className= "skill-icon" icon={html5} height="50" />         
-                            <Icon className= "skill-icon" icon={api1} height="50" />
-                            <Icon className= "skill-icon" icon={bxlJquery} height="50"/>
-                            <Icon className= "skill-icon" icon={javascriptIcon} height="50"/>  
-                            <Icon className= "skill-icon" icon={bootstrapIcon} height="50"/>
-                            <Icon className= "skill-icon" icon={folderTypeCli} height="50"/> 
-                            <Icon className= "skill-icon" icon={githubFilled} height="50"/>        
-                </Col>
-                <Col
-                    className="education"
-                    align="center"                    
-                    lg= {{span:8, offset:16}} 
-                    sm={{span: 24}} 
-                    xs={{span:24}}
-                   
-                >
-                    <img className="uw" src={uw}/>
-                    <img className="usc" src={usc}/>
-                </Col>
-            </Row>
+                <Icon className= "Skills-icon" icon={reactIcon} height="50"/>
+                <Icon className= "Skills-icon" icon={antDesign}  height="50"/>
+                <Icon className= "Skills-icon" icon={mongodbIcon}  height="50"/>
+                <Icon className= "Skills-icon" icon={logoNodejs} height="50" />          
+                <Icon className= "Skills-icon" icon={npmIcon}  height="50"/>
+                <Icon className= "Skills-icon" icon={materializecssIcon}  height="50" />
+                <Icon className= "Skills-icon" icon={mysqlIcon}  height="50"/>
+                <Icon className= "Skills-icon" icon={html5} height="50" />         
+                <Icon className= "Skills-icon" icon={api1} height="50" />
+                <Icon className= "Skills-icon" icon={bxlJquery} height="50"/>
+                <Icon className= "Skills-icon" icon={javascriptIcon} height="50"/>  
+                <Icon className= "Skills-icon" icon={bootstrapIcon} height="50"/>
+                <Icon className= "Skills-icon" icon={folderTypeCli} height="50"/> 
+                <Icon className= "Skills-icon" icon={githubFilled} height="50"/>        
+            </div> 
+            <div 
+                className="Skills-education"
+                align="center"
+            >
+                <img src={uw}/>
+                <img src={usc}/>
+            </div> 
         </div>
     )
 }
