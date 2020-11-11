@@ -8,15 +8,15 @@ export default function PortfolioCard(props) {
     return (
       
     <div className="Portfolio-card">
-        <div className="Portfolio-name">{props.name}</div>
+        <a className="Portfolio-name" href={props.app}>{props.name}</a>
         <div className="Portfolio-image">
             <img src={props.img} alt={props.name}/>
         </div>
         <div className="Portfolio-role">{props.role}</div>
         <div className="Portfolio-tech">{props.tech}</div>
         <div className="Portfolio-description">{props.description}</div>
-        <a href={props.github}> <img className="Portfolio-github"  src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
-        <a href={props.app} > <img className="Portfolio-app"  src="https://img.icons8.com/carbon-copy/100/000000/domain.png"/></a>
+        <a href={props.github}> <img className="Portfolio-icon"  src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+        <a href={props.app} > <img className="Portfolio-icon"   src="https://img.icons8.com/ios-filled/48/000000/application-window.png"/></a>
     </div>
      
     )
