@@ -13,7 +13,7 @@ export default function PortfolioCard(props) {
             <div className="Portfolio-image">
                 <a href={props.app} target="_blank"><img src={props.img} alt={props.name}/></a>
                     <div className="Portfolio-middle">
-                        <div className="Portfolio-text">click for website</div>
+                        <div className="Portfolio-text">view website</div>
                     </div>
             </div>
         </div>

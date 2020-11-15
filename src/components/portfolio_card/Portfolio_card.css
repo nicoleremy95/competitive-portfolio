@@ -38,12 +38,24 @@
     text-align: center;
 }
 
+.Portfolio-container:hover .Portfolio-middle {
+    opacity: 1;
+  }
+
+.Portfolio-text{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
 .Portfolio-card img{
     transition: all ease 500ms;
 }
 
 .Portfolio-card img:hover {
     transform: scale(1.25);
+    opacity: 0.3;
 }
 
 .Portfolio-role{
