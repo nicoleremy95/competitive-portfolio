@@ -15,11 +15,16 @@
     font-weight: 1.5rem;
 }
 
+.Portfolio-container{
+    position: relative;
+}
+
 .Portfolio-image{
     display: flex;
     justify-content: center;
     background-color: #eceff1;
     padding-bottom: 10px;
+    backface-visibility: hidden
 }
 
 .Portfolio-card img{
