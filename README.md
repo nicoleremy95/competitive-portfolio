@@ -22,7 +22,8 @@ This application is deployed to Heroku. If you go to the deployed site, you can 
 5. [Tests](#tests)
 6. [Questions](#questions)
 
-### Images of Employee Profile Process
+### Images of App
+
 
 ### Deployed App
 
