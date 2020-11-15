@@ -23,11 +23,14 @@ This application is deployed to Heroku. If you go to the deployed site, you can 
 6. [Questions](#questions)
 
 ### Images of App
+#### Home Screen
+
+![step 1](src/images/step1.png)
+
+### App
+![step 1](src/images/step2.png)
 
 
-### Deployed App
-
-![deployed app](src/images/readme.png)
 
 
 
