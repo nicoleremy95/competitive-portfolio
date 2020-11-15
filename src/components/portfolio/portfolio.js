@@ -13,8 +13,6 @@ import bxlJquery from '@iconify/icons-bx/bxl-jquery';
 import javascriptIcon from '@iconify/icons-logos/javascript';
 import api1 from '@iconify/icons-carbon/api-1';
 import folderTypeCli from '@iconify/icons-vscode-icons/folder-type-cli';
-import {Card, Space, Row} from "antd"
-import { Tooltip } from 'antd';
 import 'antd/dist/antd.css';
 import planitImg from "../../images/planit.png"
 import pawsLifeImg from "../../images/pawslife.png"
@@ -26,10 +24,6 @@ import budgetTrackerImg from "../../images/budgetTracker.png"
 import employeeDirectoryImg from "../../images/employeeDirectory.png"
 import './portfolio.css'
 import PortfolioCard from '../portfolio_card/Portfolio_card'
-
-
-
-const { Meta } = Card;
 
 export default function PortfolioOld() {
     const portfolioArr= [
@@ -76,9 +70,6 @@ export default function PortfolioOld() {
           <Icon className="Portfolio-tech-icons" icon={html5} height="25" />,          
           <Icon className="Portfolio-tech-icons" icon={materializecssIcon}  height="25" />,
           <Icon className="Portfolio-tech-icons" icon={api1} height="25" />,
-
-          
-
         ],
         type: "Group Project",
         role: "Project Manager",
