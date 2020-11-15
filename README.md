@@ -9,7 +9,7 @@ Welcome to my professional portfolio!
 1. [Nicole](https://ner-portfolio.herokuapp.com/)
 
 ### Description
-This application is a portfolio of my work as a web developer. It is a react app that utilizes Ant Design as a framework. My portfolio includes a section about me, all of my projects, my resume, and a contact form at the bottom. 
+This application is a portfolio of my work as a web developer. My portfolio includes a section about me and some highlighted projects. 
 
 This application is deployed to Heroku. If you go to the deployed site, you can click the app install to install the application to your computer. 
 
