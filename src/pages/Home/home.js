@@ -9,6 +9,7 @@ import Skills from '../../components/skills/skills'
 export default function Home() {
     return (
         <>
+        
             <Navbar/>
             <Aboutme/>
             <Skills/>

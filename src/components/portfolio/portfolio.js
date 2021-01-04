@@ -1,4 +1,5 @@
 import React from 'react'
+import {Col} from 'antd';
 import {Icon} from '@iconify/react';
 import materializecssIcon from '@iconify/icons-logos/materializecss';
 import mongodbIcon from '@iconify/icons-logos/mongodb';
@@ -162,7 +163,8 @@ export default function PortfolioOld() {
      
     ]
     return (
-      <div className="Portfolio">
+      <div className="Portfolio" >
+        <Col span={20} offset={2}>
         <div className="Portfolio-cards">
             {portfolioArr.map(project =>(
               <PortfolioCard 
@@ -176,6 +178,7 @@ export default function PortfolioOld() {
               />
             ))}
         </div>
+        </Col>
       </div>
     )
 }
